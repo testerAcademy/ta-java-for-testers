@@ -1,5 +1,5 @@
 {
-  "title": "TA | Java for Testers - Capítulo 2 Introducción",
+  "title": "Quiz — Capítulo 1",
   "sections": [
     {
       "id": "s1",
@@ -9,16 +9,24 @@
       "questions": [
         {
           "id": "q1",
-          "text": "Pregunta de ejemplo sin imagen.",
-          "options": ["Opción A", "Opción B", "Opción C"],
-          "answer": "Opción A",
+          "text": "¿Cuál afirmación es verdadera sobre la JVM?",
+          "options": [
+            {"option": "a", "text": "Reemplaza al JDK."},
+            {"option": "b", "text": "Vive dentro del JDK y del JRE y ejecuta el bytecode en cualquier sistema."},
+            {"option": "c", "text": "Solo funciona en Linux."}
+          ],
+          "answer": "b",
           "image": ""
         },
         {
           "id": "q2",
-          "text": "Pregunta de ejemplo con imagen.",
-          "options": ["Python", "Java", "C#"],
-          "answer": "Java",
+          "text": "¿Qué lenguaje corresponde al siguiente fragmento de código?",
+          "options": [
+            {"option": "a", "text": "Python"},
+            {"option": "b", "text": "Java"},
+            {"option": "c", "text": "C#"}
+          ],
+          "answer": "b",
           "image": "images/ejemplo.png"
         }
       ]
@@ -27,12 +35,18 @@
       "id": "s2",
       "type": "matches",
       "title": "Sección 2 — Relacionar",
-      "instructions": "Toca/click en una tarjeta y luego toca/click el recuadro donde colocas tu respuesta.",
+      "instructions": "Relaciona cada enunciado con la tarjeta correcta.",
       "pairs": [
-        { "text": "Enunciado 1", "answer": "Opción 1" },
-        { "text": "Enunciado 2", "answer": "Opción 2" },
-        { "text": "Enunciado 3", "answer": "Opción 3" },
-        { "text": "Enunciado 4", "answer": "Opción 4" }
+        {"text": "Enunciado 1", "answer": "a"},
+        {"text": "Enunciado 2", "answer": "b"},
+        {"text": "Enunciado 3", "answer": "c"},
+        {"text": "Enunciado 4", "answer": "d"}
+      ],
+      "options": [
+        {"option": "a", "text": "Definición A"},
+        {"option": "b", "text": "Definición B"},
+        {"option": "c", "text": "Definición C"},
+        {"option": "d", "text": "Definición D"}
       ]
     }
   ]

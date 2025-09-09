@@ -13,15 +13,12 @@ async function gradeQuiz(){
   const scoreEl = document.getElementById("scoreTop");
   const statusMsg = document.getElementById("statusMsg");
 
-  // Secciones
   (data.sections || []).forEach(section => {
     if (section.type === "options"){
-      // Cada pregunta suma 1
       (section.questions || []).forEach(q => {
         total++;
-        const qid = q.id;
-        const sel = document.querySelector(`input[name="${qid}"]:checked`);
-        const fb = document.getElementById(`fb-${qid}`);
+        const sel = document.querySelector(`input[name="${q.id}"]:checked`);
+        const fb = document.getElementById(`fb-${q.id}`);
         if (sel && sel.value === q.answer){
           score++; if (fb){ fb.textContent = "✔ Correcto"; fb.className = "qfb ok"; }
         } else {
@@ -31,18 +28,17 @@ async function gradeQuiz(){
     }
 
     if (section.type === "matches"){
-      // Cada par (fila) suma 1
       const panel = document.querySelector(`section.panel[data-sec="${section.id}"][data-type="matches"]`);
       if (!panel) return;
-
       const rows = Array.from(panel.querySelectorAll(".row"));
+
       rows.forEach((row, idx) => {
         total++;
-        const expected = (section.pairs || [])[idx]?.answer;
+        const expected = (section.pairs || [])[idx]?.answer; // clave esperada
         const drop = row.querySelector(".drop");
         const fb = row.querySelector(".rowfb");
 
-        if (drop && drop.firstChild && drop.firstChild.textContent === expected){
+        if (drop && drop.firstChild && drop.firstChild.dataset.opt === expected){
           score++; if (fb){ fb.textContent = "✔ Correcto"; fb.className = "rowfb ok"; }
         } else {
           if (fb){ fb.textContent = "✘ Revisa"; fb.className = "rowfb bad"; }
@@ -71,11 +67,9 @@ async function gradeQuiz(){
 }
 
 function resetQuiz(){
-  // Radios
   document.querySelectorAll("input[type=radio]").forEach(r => r.checked = false);
   document.querySelectorAll(".qfb").forEach(fb => fb.textContent = "");
 
-  // Regresar tarjetas de todas las secciones "matches"
   document.querySelectorAll('section.panel[data-type="matches"]').forEach(panel=>{
     const bank = panel.querySelector(".bank");
     panel.querySelectorAll(".drop .pill").forEach(pill => bank.appendChild(pill));

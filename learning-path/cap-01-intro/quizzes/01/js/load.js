@@ -1,42 +1,35 @@
-// Render dinámico desde data.json
+// Render dinámico desde data.json (v2.1 con options {option, text})
 (async function loadQuiz(){
   const res = await fetch("data/data.json");
   const data = await res.json();
 
   // Header
-  const titleEl = document.getElementById("quiz-title");
-  titleEl.textContent = data.title || "Quiz";
+  document.getElementById("quiz-title").textContent = data.title || "Quiz";
 
-  // Contenedor principal
   const container = document.getElementById("quiz-container");
   container.innerHTML = "";
 
-  // Utilidad: crea una sección .panel
-  function createPanel({id, title, instructions, type}){
-    const panel = document.createElement("section");
-    panel.className = "panel";
-    panel.dataset.type = type;
-    panel.dataset.sec = id;
-
-    const h2 = document.createElement("h2");
-    h2.textContent = title || "Sección";
-    panel.appendChild(h2);
-
-    if (instructions){
-      const note = document.createElement("p");
-      note.className = "note";
-      note.textContent = instructions;
-      panel.appendChild(note);
-    }
-    return panel;
-  }
-
-  // ====== RENDER SECCIONES ======
+  // ===== RENDER DE SECCIONES =====
   (data.sections || []).forEach((section, secIndex) => {
     const secId = section.id || `sec-${secIndex+1}`;
 
+    // ---------- OPCIÓN MÚLTIPLE ----------
     if (section.type === "options"){
-      const panel = createPanel({ id: secId, title: section.title, instructions: section.instructions, type: "options" });
+      const panel = document.createElement("section");
+      panel.className = "panel";
+      panel.dataset.type = "options";
+      panel.dataset.sec = secId;
+
+      const h2 = document.createElement("h2");
+      h2.textContent = section.title || "Sección";
+      panel.appendChild(h2);
+
+      if (section.instructions){
+        const note = document.createElement("p");
+        note.className = "note";
+        note.textContent = section.instructions;
+        panel.appendChild(note);
+      }
 
       (section.questions || []).forEach((q, qIndex) => {
         const qa = document.createElement("div");
@@ -60,15 +53,15 @@
           const label = document.createElement("label");
           const input = document.createElement("input");
           input.type = "radio";
-          input.name = q.id || `q${secIndex+1}_${qIndex+1}`;
-          input.value = opt;
+          input.name = q.id;
+          input.value = opt.option; // ahora el valor es la clave (ej. "a")
           label.appendChild(input);
-          label.appendChild(document.createTextNode(" " + opt));
+          label.appendChild(document.createTextNode(" " + opt.text));
           qa.appendChild(label);
         });
 
         const fb = document.createElement("div");
-        fb.id = "fb-" + (q.id || `q${secIndex+1}_${qIndex+1}`);
+        fb.id = "fb-" + q.id;
         fb.className = "qfb";
         qa.appendChild(fb);
 
@@ -78,10 +71,25 @@
       container.appendChild(panel);
     }
 
+    // ---------- RELACIONAR ----------
     if (section.type === "matches"){
-      const panel = createPanel({ id: secId, title: section.title, instructions: section.instructions, type: "matches" });
+      const panel = document.createElement("section");
+      panel.className = "panel";
+      panel.dataset.type = "matches";
+      panel.dataset.sec = secId;
 
-      // Filas (rows) con su respuesta esperada en data-ans
+      const h2 = document.createElement("h2");
+      h2.textContent = section.title || "Sección";
+      panel.appendChild(h2);
+
+      if (section.instructions){
+        const note = document.createElement("p");
+        note.className = "note";
+        note.textContent = section.instructions;
+        panel.appendChild(note);
+      }
+
+      // Filas (rows)
       const rowsWrap = document.createElement("div");
       rowsWrap.className = "rows";
       rowsWrap.id = `${secId}-rows`;
@@ -89,11 +97,11 @@
       (section.pairs || []).forEach((pair, idx) => {
         const row = document.createElement("div");
         row.className = "row";
-        row.dataset.ans = pair.answer;
+        row.dataset.ans = pair.answer; // ahora compara contra clave (ej. "a")
 
         const rq = document.createElement("div");
         rq.className = "row-question";
-        rq.textContent = `${idx+1}. ${pair.text || ""}`;
+        rq.textContent = `${idx+1}. ${pair.text}`;
         row.appendChild(rq);
 
         const drop = document.createElement("div");
@@ -109,7 +117,7 @@
 
       panel.appendChild(rowsWrap);
 
-      // Banco de tarjetas (opciones)
+      // Banco de tarjetas
       const bankBlock = document.createElement("div");
       bankBlock.className = "bank-block";
 
@@ -122,15 +130,11 @@
       bank.className = "bank";
       bank.id = `${secId}-bank`;
 
-      // Crear conjunto único de respuestas
-      const answers = Array.from(new Set((section.pairs || []).map(p => p.answer)));
-      // (Opcional) mezclar
-      // answers.sort(() => Math.random() - 0.5);
-
-      answers.forEach(txt => {
+      (section.options || []).forEach(opt => {
         const pill = document.createElement("div");
         pill.className = "pill";
-        pill.textContent = txt;
+        pill.dataset.opt = opt.option; // clave interna
+        pill.textContent = opt.text;   // texto visible
         bank.appendChild(pill);
       });
 
@@ -148,17 +152,16 @@
 
       container.appendChild(panel);
 
-      // Interacciones (modo click/tap-to-place) por sección
+      // Interacciones drag/click
       attachMatchesInteractions(panel);
     }
   });
 
-  // Estado inicial del score
   setNeutralScore();
 
 })();
 
-// ========== Interacciones para "matches" por sección ==========
+// ====== Interacciones matches ======
 function attachMatchesInteractions(panel){
   const bank = panel.querySelector(".bank");
   const drops = Array.from(panel.querySelectorAll(".drop"));
@@ -198,7 +201,7 @@ function attachMatchesInteractions(panel){
   });
 }
 
-// ====== Utilidades de score (compartidas con grade.js) ======
+// ====== Utilidad compartida ======
 function setNeutralScore(){
   const scoreEl = document.getElementById("scoreTop");
   const statusMsg = document.getElementById("statusMsg");
