@@ -1,0 +1,10 @@
+{
+  "questions": [
+    {
+      "text": "¿Qué muestra esta imagen?",
+      "image": "images/ejemplo.jpg",
+      "options": ["Opción A", "Opción B", "Opción C"],
+      "answer": "Opción B"
+    }
+  ]
+}
