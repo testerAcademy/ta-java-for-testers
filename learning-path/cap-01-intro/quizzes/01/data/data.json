@@ -1,10 +1,39 @@
 {
-  "questions": [
+  "title": "TA | Java for Testers - Capítulo 2 Introducción",
+  "sections": [
     {
-      "text": "¿Qué muestra esta imagen?",
-      "image": "images/ejemplo.jpg",
-      "options": ["Opción A", "Opción B", "Opción C"],
-      "answer": "Opción B"
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple",
+      "instructions": "Selecciona la respuesta correcta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "Pregunta de ejemplo sin imagen.",
+          "options": ["Opción A", "Opción B", "Opción C"],
+          "answer": "Opción A",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "Pregunta de ejemplo con imagen.",
+          "options": ["Python", "Java", "C#"],
+          "answer": "Java",
+          "image": "images/ejemplo.png"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "matches",
+      "title": "Sección 2 — Relacionar",
+      "instructions": "Toca/click en una tarjeta y luego toca/click el recuadro donde colocas tu respuesta.",
+      "pairs": [
+        { "text": "Enunciado 1", "answer": "Opción 1" },
+        { "text": "Enunciado 2", "answer": "Opción 2" },
+        { "text": "Enunciado 3", "answer": "Opción 3" },
+        { "text": "Enunciado 4", "answer": "Opción 4" }
+      ]
     }
   ]
 }
