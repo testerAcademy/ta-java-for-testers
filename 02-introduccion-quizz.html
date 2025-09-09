@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>TA | Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- QUIZZ-TEMPLATE v1.4.1 (oficial) -->
+  <style>
+    :root{
+      --bg:#0f172a; --panel:#111827; --ink:#e5e7eb; --muted:#9ca3af; --line:#1f2937;
+      --accent:#7c3aed; --accent-ink:#fff; --ok:#22c55e; --bad:#ef4444; --btn:#3b82f6;
+      --dropGlow: rgba(59,130,246,.18);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+
+    /* Header */
+    .header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(11,18,34,.92); backdrop-filter:saturate(140%) blur(6px);
+      border-bottom:1px solid var(--line); padding:10px 16px;
+      padding-top:calc(env(safe-area-inset-top) + 8px);
+      display:flex; flex-direction:column; gap:8px;
+    }
+    .topline{display:flex; justify-content:space-between; align-items:center; gap:10px}
+    .title{font-weight:700; font-size:clamp(18px, 2vw, 22px);}
+
+    /* SCORE BADGE + status */
+    .score{
+      font-weight:800; font-size:clamp(14px, 1.6vw, 16px);
+      padding:4px 10px; border-radius:10px; color:#fff; background:var(--line);
+      transition:background .25s ease, transform .15s ease;
+      white-space:nowrap;
+    }
+    .score.good { background: var(--ok); }
+    .score.bad  { background: var(--bad); }
+    .score.pulse{ transform: scale(1.03); }
+
+    #statusWrap{display:flex; align-items:center; gap:8px}
+    #statusMsg{ font-weight:700; font-size:clamp(13px,1.5vw,15px); }
+    #statusMsg.ok   { color: var(--ok); }
+    #statusMsg.fail { color: var(--bad); }
+
+    .btns{display:flex; gap:10px; justify-content:flex-end}
+    button{background:#334155;color:#e5e7eb;border:none;padding:10px 14px;border-radius:12px;font-weight:700;cursor:pointer}
+    .primary{background:var(--btn)} .secondary{background:#475569}
+
+    main{max-width:1100px;margin:18px auto;padding:0 16px}
+    section.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:20px}
+    h2{margin:0 0 12px;font-size:18px}
+    p.note{color:var(--muted);font-size:14px;margin-top:10px}
+
+    /* Opción múltiple */
+    .qa{margin:10px 0;padding:12px;background:#0b1222;border:1px solid var(--line);border-radius:12px}
+    .qa p{margin:0 0 8px}
+    label{display:block;margin-bottom:8px;cursor:pointer;line-height:1.3}
+    .qfb{font-size:13px;margin-top:6px}
+    .ok{color:var(--ok)} .badText{color:var(--bad)}
+
+    /* Relacionar (click/tap-to-place) */
+    .rows{display:flex;flex-direction:column;gap:16px}
+    .row{display:flex;flex-direction:column;gap:8px;background:#0b1222;border:1px solid var(--line);border-radius:12px;padding:14px}
+    .row-question{font-weight:700; font-size: clamp(16px, 1.6vw, 18px); margin-bottom:4px}
+
+    .drop{
+      min-height:56px; background:#0a0f1c; border:2px dashed #334155; border-radius:12px;
+      display:flex; align-items:center; justify-content:center; padding:8px;
+      transition: border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
+    }
+    /* Hover SOLO en desktop */
+    @media (hover:hover) and (pointer:fine){
+      .drop:hover{ border-color: var(--btn); box-shadow: 0 0 0 6px var(--dropGlow); background:#0b1424; }
+    }
+    .drop:focus-visible{ outline:none; border-color: var(--btn); box-shadow: 0 0 0 6px var(--dropGlow); background:#0b1424; }
+
+    .rowfb{font-size:13px;margin-top:6px}
+    .rowfb.ok{color:var(--ok)} .rowfb.bad{color:var(--bad)}
+
+    /* Bloque Tarjetas */
+    .bank-block{
+      background:#0b1222; border:1px solid var(--line); border-radius:12px;
+      padding:14px; margin-top:12px;
+    }
+    .bank-title{
+      font-weight:700;
+      font-size: clamp(16px, 1.6vw, 18px);
+      color: var(--ink);
+      margin: 0 0 10px;
+      display:flex; align-items:center; gap:10px;
+    }
+    .bank-title::before{ content:"🃏"; filter:grayscale(1) brightness(1.2); }
+    .bank{
+      background:#0b1222; border:1px solid var(--line); border-radius:12px;
+      padding:12px; display:flex; flex-wrap:wrap; gap:12px;
+    }
+
+    .pill{
+      user-select:none; display:inline-flex; align-items:center; justify-content:center;
+      background:var(--accent); color:var(--accent-ink); border-radius:999px; padding:12px 20px; font-weight:800;
+      box-shadow:0 2px 0 rgba(0,0,0,.2); cursor:pointer;
+      transition: transform .08s ease;
+    }
+    .pill:active{ transform: scale(.98); }
+    .pill.selected{ outline:3px solid #a78bfa; box-shadow:0 0 0 4px rgba(167,139,250,.15); }
+
+    .bar{display:flex;gap:10px;justify-content:flex-end;margin-top:10px}
+
+    @media (max-width: 768px){
+      main{padding:0 12px}
+      button{padding:10px 12px; border-radius:12px}
+      .rows{gap:18px}
+      .row{padding:14px}
+      .drop{min-height:60px}
+      .pill{padding:12px 20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="topline">
+      <div class="title">TA | Java for Testers | Capítulo 2 — Introducción a Java</div>
+      <div id="statusWrap">
+        <div class="score" id="scoreTop">Resultado: —</div>
+        <div id="statusMsg"></div>
+      </div>
+    </div>
+    <div class="btns">
+      <button class="primary" id="gradeTop">Enviar</button>
+      <button class="secondary" id="resetTop">Reiniciar</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Sección 1: Opción múltiple -->
+    <section class="panel">
+      <h2>Sección 1 — Opción múltiple (JDK / JRE / JVM)</h2>
+      <p class="note">Instrucciones: Contesta la pregunta seleccionando la opción correcta.</p>
+
+      <div class="qa" data-q="q1">
+        <p><strong>1.</strong> ¿Cuál afirmación es <em>verdadera</em> sobre la JVM?</p>
+        <label><input type="radio" name="q1" value="a"> Reemplaza al JDK.</label>
+        <label><input type="radio" name="q1" value="b"> Vive dentro del JDK y del JRE y ejecuta el bytecode en cualquier sistema.</label>
+        <label><input type="radio" name="q1" value="c"> Solo funciona en Linux.</label>
+        <div id="fb-q1" class="qfb"></div>
+      </div>
+
+      <div class="qa" data-q="q2">
+        <p><strong>2.</strong> ¿Para qué sirve el JDK?</p>
+        <label><input type="radio" name="q2" value="a"> Para crear y compilar programas Java.</label>
+        <label><input type="radio" name="q2" value="b"> Solo para ejecutar programas Java.</label>
+        <label><input type="radio" name="q2" value="c"> Para traducir Java a inglés.</label>
+        <div id="fb-q2" class="qfb"></div>
+      </div>
+
+      <div class="qa" data-q="q3">
+        <p><strong>3.</strong> ¿Para qué sirve el JRE?</p>
+        <label><input type="radio" name="q3" value="a"> Para crear aplicaciones nuevas.</label>
+        <label><input type="radio" name="q3" value="b"> Para ejecutar programas Java como cliente.</label>
+        <label><input type="radio" name="q3" value="c"> Para administrar repositorios.</label>
+        <div id="fb-q3" class="qfb"></div>
+      </div>
+
+      <div class="qa" data-q="q4">
+        <p><strong>4.</strong> ¿Qué incluye el JRE?</p>
+        <label><input type="radio" name="q4" value="a"> Editor de código y Git.</label>
+        <label><input type="radio" name="q4" value="b"> Librerías + la JVM para poder ejecutar programas Java.</label>
+        <label><input type="radio" name="q4" value="c"> Solo el compilador javac.</label>
+        <div id="fb-q4" class="qfb"></div>
+      </div>
+
+      <div class="qa" data-q="q5">
+        <p><strong>5.</strong> ¿Qué añade el JDK respecto al JRE?</p>
+        <label><input type="radio" name="q5" value="a"> Herramientas de desarrollo como el compilador (javac).</label>
+        <label><input type="radio" name="q5" value="b"> Un navegador web.</label>
+        <label><input type="radio" name="q5" value="c"> Solo documentación PDF.</label>
+        <div id="fb-q5" class="qfb"></div>
+      </div>
+    </section>
+
+    <!-- Sección 2: Relacionar -->
+    <section class="panel">
+      <h2>Sección 2 — Relacionar — POO con Mascotas</h2>
+      <p class="note">
+        Instrucciones: <strong>toca o haz clic</strong> en una tarjeta para seleccionarla y luego <strong>toca o haz clic</strong> en el recuadro correspondiente.
+      </p>
+      <p class="note">
+        Relaciona los conceptos con el pilar de POO correspondiente
+      </p>
+
+      <div class="rows" id="rel-rows">
+        <div class="row" data-ans="Abstracción">
+          <div class="row-question">Como dueño solo te importa que tu perro pueda comer, dormir y jugar; no te preocupas por cómo funcionan sus órganos internos.</div>
+          <div class="drop"></div>
+          <div class="rowfb"></div>
+        </div>
+        <div class="row" data-ans="Polimorfismo">
+          <div class="row-question">El método hacerSonido() se comporta distinto según la mascota: el perro ladra, el gato maúlla, el ave canta.</div>
+          <div class="drop"></div>
+          <div class="rowfb"></div>
+        </div>
+        <div class="row" data-ans="Encapsulamiento">
+          <div class="row-question">La información de la mascota (edad, historial médico) está protegida; solo se accede con métodos controlados (vet/propietario).</div>
+          <div class="drop"></div>
+          <div class="rowfb"></div>
+        </div>
+        <div class="row" data-ans="Herencia">
+          <div class="row-question">La clase Animal tiene atributos como respirar y moverse; Perro y Gato heredan eso y añaden lo suyo (cola, maullido, etc.).</div>
+          <div class="drop"></div>
+          <div class="rowfb"></div>
+        </div>
+      </div>
+
+      <!-- Bloque Tarjetas -->
+      <div class="bank-block">
+        <div class="bank-title">Tarjetas (Pilares)</div>
+        <div class="bank" id="bank">
+          <div class="pill">Abstracción</div>
+          <div class="pill">Polimorfismo</div>
+          <div class="pill">Encapsulamiento</div>
+          <div class="pill">Herencia</div>
+        </div>
+      </div>
+
+      <div class="bar">
+        <button class="secondary" id="returnBtn">Regresar tarjetas</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // ====== Helpers (template v1.4) ======
+    const $ = sel => document.querySelector(sel);
+    const $$ = sel => Array.from(document.querySelectorAll(sel));
+    const bank = $('#bank');
+    const drops = $$('.drop');
+    const scoreEl = $('#scoreTop');
+    const statusMsg = $('#statusMsg');
+    const PASS_THRESHOLD = 60; // % mínimo para aprobar
+
+    // ====== Inicializar score
+    function setNeutralScore(){
+      scoreEl.textContent = 'Resultado: —';
+      scoreEl.classList.remove('good','bad','pulse');
+      statusMsg.textContent = '';
+      statusMsg.classList.remove('ok','fail');
+    }
+    setNeutralScore();
+
+    // ====== Interacción: click/tap-to-place (template v1.4)
+    let selected = null;
+    function selectPill(pill){
+      if (selected === pill){ pill.classList.remove('selected'); selected=null; return; }
+      if (selected) selected.classList.remove('selected');
+      selected = pill; pill.classList.add('selected');
+      pill.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+
+    bank.addEventListener('click', e=>{
+      const pill = e.target.closest('.pill');
+      if (!pill) return;
+      selectPill(pill);
+    });
+
+    drops.forEach(d=>{
+      d.addEventListener('click', ()=>{
+        if (!selected) return;
+        const prev = d.querySelector('.pill');
+        if (prev) bank.appendChild(prev);
+        d.innerHTML = ''; d.appendChild(selected);
+        selected.classList.remove('selected'); selected=null;
+        d.scrollIntoView({behavior:'smooth', block:'center'});
+      });
+    });
+
+    // Regresar todo
+    $('#returnBtn').addEventListener("click",()=>{
+      $$('.pill').forEach(p=>bank.appendChild(p));
+      drops.forEach(d=>d.innerHTML="");
+      $$('.rowfb').forEach(fb=>fb.textContent="");
+      $$('.pill.selected').forEach(p=>p.classList.remove('selected'));
+      selected=null;
+      setNeutralScore();
+    });
+
+    // ====== Calificar (contenido Cap.2) ======
+    function grade(){
+      // 5 de opción múltiple + 4 de relacionar = 9
+      let score=0,total=9;
+
+      // Respuestas correctas (no tocar layout del template)
+      const answers={ 
+        q1:"b",
+        q2:"a",
+        q3:"b",
+        q4:"b",
+        q5:"a"
+      };
+
+      // Opción múltiple
+      Object.keys(answers).forEach(q=>{
+        const sel=document.querySelector(`input[name=${q}]:checked`);
+        const fb=document.getElementById("fb-"+q);
+        if(sel && sel.value===answers[q]){ fb.textContent="✔ Correcto"; fb.className="qfb ok"; score++; }
+        else{ fb.textContent="✘ Incorrecto"; fb.className="qfb badText"; }
+      });
+
+      // Relacionar
+      document.querySelectorAll(".row").forEach(r=>{
+        const drop=r.querySelector(".drop");
+        const fb=r.querySelector(".rowfb");
+        if(drop.firstChild && drop.firstChild.textContent===r.dataset.ans){
+          fb.textContent="✔ Correcto"; fb.className="rowfb ok"; score++;
+        }else{
+          fb.textContent="✘ Revisa"; fb.className="rowfb bad";
+        }
+      });
+
+      const percent = Math.round((score/total)*100);
+      scoreEl.textContent = `Resultado: ${score}/${total} (${percent}%)`;
+      scoreEl.classList.remove('good','bad','pulse');
+      statusMsg.classList.remove('ok','fail');
+
+      if (percent >= PASS_THRESHOLD) {
+        scoreEl.classList.add('good');
+        statusMsg.textContent = '✅ Aprobado';
+        statusMsg.classList.add('ok');
+      } else {
+        scoreEl.classList.add('bad');
+        statusMsg.textContent = '❌ No Aprobado';
+        statusMsg.classList.add('fail');
+      }
+      requestAnimationFrame(()=>scoreEl.classList.add('pulse'));
+      setTimeout(()=>scoreEl.classList.remove('pulse'), 180);
+    }
+
+    function resetAll(){
+      $$("input[type=radio]").forEach(r=>r.checked=false);
+      $$(".qfb").forEach(fb=>fb.textContent="");
+      $("#returnBtn").click();
+      document.scrollingElement.scrollTo({top:0, behavior:'smooth'});
+    }
+
+    $('#gradeTop').addEventListener('click', grade);
+    $('#resetTop').addEventListener('click', resetAll);
+  </script>
+</body>
+</html>
