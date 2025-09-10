@@ -14,19 +14,34 @@ async function gradeQuiz(){
   const statusMsg = document.getElementById("statusMsg");
 
   (data.sections || []).forEach(section => {
+    // ===== OPCIONES =====
     if (section.type === "options"){
       (section.questions || []).forEach(q => {
         total++;
         const sel = document.querySelector(`input[name="${q.id}"]:checked`);
         const fb = document.getElementById(`fb-${q.id}`);
-        if (sel && sel.value === q.answer){
-          score++; if (fb){ fb.textContent = "✔ Correcto"; fb.className = "qfb ok"; }
+        fb.innerHTML = ""; // limpiar antes
+
+        if (sel){
+          const chosen = q.options.find(o => o.option === sel.value);
+          const correct = q.options.find(o => o.option === q.answer);
+
+          if (sel.value === q.answer){
+            score++;
+            fb.innerHTML = `✔ Correcto<br><em>${chosen.explanation}</em>`;
+            fb.className = "qfb ok";
+          } else {
+            fb.innerHTML = `✘ Incorrecto<br><em>${chosen.explanation}</em><br>La correcta era: ${correct.text}.`;
+            fb.className = "qfb badText";
+          }
         } else {
-          if (fb){ fb.textContent = "✘ Incorrecto"; fb.className = "qfb badText"; }
+          fb.textContent = "No respondida";
+          fb.className = "qfb badText";
         }
       });
     }
 
+    // ===== MATCHES =====
     if (section.type === "matches"){
       const panel = document.querySelector(`section.panel[data-sec="${section.id}"][data-type="matches"]`);
       if (!panel) return;
@@ -34,14 +49,27 @@ async function gradeQuiz(){
 
       rows.forEach((row, idx) => {
         total++;
-        const expected = (section.pairs || [])[idx]?.answer; // clave esperada
+        const expected = (section.pairs || [])[idx]?.answer;
         const drop = row.querySelector(".drop");
         const fb = row.querySelector(".rowfb");
+        fb.innerHTML = "";
 
-        if (drop && drop.firstChild && drop.firstChild.dataset.opt === expected){
-          score++; if (fb){ fb.textContent = "✔ Correcto"; fb.className = "rowfb ok"; }
+        if (drop && drop.firstChild){
+          const chosenKey = drop.firstChild.dataset.opt;
+          const chosen = (section.options || []).find(o => o.option === chosenKey);
+          const correct = (section.options || []).find(o => o.option === expected);
+
+          if (chosenKey === expected){
+            score++;
+            fb.innerHTML = `✔ Correcto<br><em>${chosen.explanation}</em>`;
+            fb.className = "rowfb ok";
+          } else {
+            fb.innerHTML = `✘ Incorrecto<br><em>${chosen.explanation}</em><br>La correcta era: ${correct.text}.`;
+            fb.className = "rowfb bad";
+          }
         } else {
-          if (fb){ fb.textContent = "✘ Revisa"; fb.className = "rowfb bad"; }
+          fb.textContent = "Sin respuesta";
+          fb.className = "rowfb bad";
         }
       });
     }
@@ -74,8 +102,8 @@ function resetQuiz(){
     const bank = panel.querySelector(".bank");
     panel.querySelectorAll(".drop .pill").forEach(pill => bank.appendChild(pill));
     panel.querySelectorAll(".drop").forEach(d => d.innerHTML = "");
-    panel.querySelectorAll(".rowfb").forEach(fb => fb.textContent = "");
-    panel.querySelectorAll(".pill.selected").forEach(p=> p.classList.remove('selected'));
+    panel.querySelectorAll(".rowfb").forEach(fb=>fb.textContent = "");
+    panel.querySelectorAll(".pill.selected").forEach(p=>p.classList.remove('selected'));
   });
 
   setNeutralScore();

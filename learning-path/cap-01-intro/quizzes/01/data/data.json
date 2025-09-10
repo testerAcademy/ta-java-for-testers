@@ -11,9 +11,21 @@
           "id": "q1",
           "text": "¿Cuál afirmación es verdadera sobre la JVM?",
           "options": [
-            {"option": "a", "text": "Reemplaza al JDK."},
-            {"option": "b", "text": "Vive dentro del JDK y del JRE y ejecuta el bytecode en cualquier sistema."},
-            {"option": "c", "text": "Solo funciona en Linux."}
+            {
+              "option": "a",
+              "text": "Reemplaza al JDK.",
+              "explanation": "La JVM no reemplaza al JDK, solo ejecuta bytecode."
+            },
+            {
+              "option": "b",
+              "text": "Vive dentro del JDK y del JRE y ejecuta el bytecode en cualquier sistema.",
+              "explanation": "Correcto, la JVM es la encargada de ejecutar el bytecode multiplataforma."
+            },
+            {
+              "option": "c",
+              "text": "Solo funciona en Linux.",
+              "explanation": "La JVM funciona en múltiples sistemas, no solo Linux."
+            }
           ],
           "answer": "b",
           "image": ""
@@ -22,12 +34,24 @@
           "id": "q2",
           "text": "¿Qué lenguaje corresponde al siguiente fragmento de código?",
           "options": [
-            {"option": "a", "text": "Python"},
-            {"option": "b", "text": "Java"},
-            {"option": "c", "text": "C#"}
+            {
+              "option": "a",
+              "text": "Python",
+              "explanation": "El código mostrado no corresponde a Python."
+            },
+            {
+              "option": "b",
+              "text": "Java",
+              "explanation": "Correcto, la sintaxis es de Java."
+            },
+            {
+              "option": "c",
+              "text": "C#",
+              "explanation": "La sintaxis es similar, pero no es C#."
+            }
           ],
           "answer": "b",
-          "image": "images/ejemplo.png"
+          "image": "images/ejemplo.jpg"
         }
       ]
     },
@@ -43,10 +67,8 @@
         {"text": "Enunciado 4", "answer": "d"}
       ],
       "options": [
-        {"option": "a", "text": "Definición A"},
-        {"option": "b", "text": "Definición B"},
-        {"option": "c", "text": "Definición C"},
-        {"option": "d", "text": "Definición D"}
+        {"option": "a", "text": "Definición A", "explanation": "A es correcto porque define el concepto 1."},
+        {"option": "b", "text": "Definición B", "explanation": "B es correcto porque define el concepto 2."}
       ]
     }
   ]
