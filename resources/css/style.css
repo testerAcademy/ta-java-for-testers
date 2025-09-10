@@ -31,7 +31,7 @@ body {
   height: 56px;
   width: 56px;
   border-radius: 8px;
-  background: #000;            /* fondo uniforme */
+  background: #000;             /* negro sólido */
   display: flex;
   align-items: center;
   justify-content: center;
