@@ -1,0 +1,181 @@
+{
+  "title": "Quiz — Capítulo 2: Introducción a Java",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple (JDK / JRE / JVM)",
+      "instructions": "Contesta la pregunta seleccionando la opción correcta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Cuál afirmación es verdadera sobre la JVM?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Reemplaza al JDK.",
+              "explanation_correct": "",
+              "explanation_wrong": "Recuerda que la JVM no reemplaza al JDK, su función es ejecutar código."
+            },
+            {
+              "option": "b",
+              "text": "Vive dentro del JDK y del JRE y ejecuta el código en cualquier sistema.",
+              "explanation_correct": "Correcto, la JVM es parte del JDK/JRE y ejecuta el código en cualquier sistema es multiplataforma.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Solo funciona en Linux.",
+              "explanation_correct": "",
+              "explanation_wrong": "La JVM corre en varios sistemas operativos, no solo Linux."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "¿Para qué sirve el JDK?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Para crear y compilar programas Java.",
+              "explanation_correct": "Correcto, el JDK incluye las herramientas de desarrollo necesarias.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Solo para ejecutar programas Java.",
+              "explanation_correct": "",
+              "explanation_wrong": "Recuerda JDK, JRE, quien de ellos solo ejecuta el código y quien permite crear código"
+            },
+            {
+              "option": "c",
+              "text": "Para traducir Java a inglés.",
+              "explanation_correct": "",
+              "explanation_wrong": "El JDK no traduce idiomas"
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q3",
+          "text": "¿Para qué sirve el JRE?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Para crear aplicaciones nuevas.",
+              "explanation_correct": "",
+              "explanation_wrong": "Recuerda JDK, JRE, quien de ellos solo ejecuta el código y quien permite crear código"
+            },
+            {
+              "option": "b",
+              "text": "Para ejecutar programas Java como cliente.",
+              "explanation_correct": "Correcto, el JRE permite ejecutar aplicaciones Java.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Para administrar repositorios.",
+              "explanation_correct": "",
+              "explanation_wrong": "El JRE no administra repositorios."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q4",
+          "text": "¿Qué incluye el JRE?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Editor de código y Git.",
+              "explanation_correct": "",
+              "explanation_wrong": "El JRE no incluye editores de código ni control de versiones."
+            },
+            {
+              "option": "b",
+              "text": "Librerías + la JVM para poder ejecutar programas Java.",
+              "explanation_correct": "Correcto, el JRE contiene las librerías básicas y la JVM.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Kit de desarrollo de Java.",
+              "explanation_correct": "",
+              "explanation_wrong": "El JRE no incluye el Kit, eso es del JDK."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q5",
+          "text": "¿Qué añade el JDK respecto al JRE?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Kit de desarrollo para crear programas en Java.",
+              "explanation_correct": "Correcto, el JDK añade herramientas de desarrollo sobre el JRE.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Un navegador web.",
+              "explanation_correct": "",
+              "explanation_wrong": "El JDK no añade navegadores"
+            },
+            {
+              "option": "c",
+              "text": "Solo documentación PDF.",
+              "explanation_correct": "",
+              "explanation_wrong": "No te confundas, el JDK trae mucho más que solo documentación."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "matches",
+      "title": "Sección 2 — Relacionar — POO con Mascotas",
+      "instructions": "Relaciona los conceptos con el pilar de POO correspondiente.",
+      "pairs": [
+        {"text": "Como dueño solo te importa que tu perro pueda comer, dormir y jugar; no te preocupas por cómo funcionan sus órganos internos.", "answer": "c"},
+        {"text": "El método hacerSonido() se comporta distinto según la mascota: el perro ladra, el gato maúlla, el ave canta.", "answer": "b"},
+        {"text": "La información de la mascota (edad, historial médico) está protegida; solo se accede con métodos controlados (vet/propietario).", "answer": "a"},
+        {"text": "La clase Animal tiene atributos como respirar y moverse; Perro y Gato heredan eso y añaden lo suyo (cola, maullido, etc.).", "answer": "d"}
+      ],
+      "options": [
+        {
+          "option": "a",
+          "text": "Encapsulamiento",
+          "explanation_correct": "Correcto, encapsulamiento protege los datos internos.",
+          "explanation_wrong": "Revisa: encapsulamiento significa proteger datos, no heredar ni abstraer."
+        },
+        {
+          "option": "b",
+          "text": "Polimorfismo",
+          "explanation_correct": "Correcto, polimorfismo permite comportamientos distintos en un mismo método.",
+          "explanation_wrong": "Polimorfismo no es lo mismo que encapsulamiento o herencia."
+        },
+        {
+          "option": "c",
+          "text": "Abstracción",
+          "explanation_correct": "Correcto, abstracción significa centrarse en lo esencial y ocultar lo interno.",
+          "explanation_wrong": "La abstracción no trata de herencia ni de encapsular datos."
+        },
+        {
+          "option": "d",
+          "text": "Herencia",
+          "explanation_correct": "Correcto, herencia permite reutilizar y extender atributos y métodos.",
+          "explanation_wrong": "Herencia no es polimorfismo ni abstracción, repasa el concepto."
+        }
+      ]
+    }
+  ]
+}
