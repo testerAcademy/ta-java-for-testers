@@ -20,18 +20,19 @@ async function gradeQuiz(){
         total++;
         const sel = document.querySelector(`input[name="${q.id}"]:checked`);
         const fb = document.getElementById(`fb-${q.id}`);
-        fb.innerHTML = ""; // limpiar antes
+        fb.innerHTML = "";
 
         if (sel){
           const chosen = q.options.find(o => o.option === sel.value);
-          const correct = q.options.find(o => o.option === q.answer);
 
           if (sel.value === q.answer){
             score++;
-            fb.innerHTML = `✔ Correcto<br><em>${chosen.explanation}</em>`;
+            const extra = chosen?.explanation_correct ? `<br><em>${chosen.explanation_correct}</em>` : "";
+            fb.innerHTML = `✔ Correcto${extra}`;
             fb.className = "qfb ok";
           } else {
-            fb.innerHTML = `✘ Incorrecto<br><em>${chosen.explanation}</em><br>La correcta era: ${correct.text}.`;
+            const extra = chosen?.explanation_wrong ? `<br><em>${chosen.explanation_wrong}</em>` : "";
+            fb.innerHTML = `✘ Incorrecto${extra}`;
             fb.className = "qfb badText";
           }
         } else {
@@ -45,26 +46,27 @@ async function gradeQuiz(){
     if (section.type === "matches"){
       const panel = document.querySelector(`section.panel[data-sec="${section.id}"][data-type="matches"]`);
       if (!panel) return;
-      const rows = Array.from(panel.querySelectorAll(".row"));
 
+      const rows = Array.from(panel.querySelectorAll(".row"));
       rows.forEach((row, idx) => {
         total++;
-        const expected = (section.pairs || [])[idx]?.answer;
+        const expectedKey = (section.pairs || [])[idx]?.answer;
         const drop = row.querySelector(".drop");
         const fb = row.querySelector(".rowfb");
         fb.innerHTML = "";
 
         if (drop && drop.firstChild){
           const chosenKey = drop.firstChild.dataset.opt;
-          const chosen = (section.options || []).find(o => o.option === chosenKey);
-          const correct = (section.options || []).find(o => o.option === expected);
+          const chosenOpt  = (section.options || []).find(o => o.option === chosenKey);
 
-          if (chosenKey === expected){
+          if (chosenKey === expectedKey){
             score++;
-            fb.innerHTML = `✔ Correcto<br><em>${chosen.explanation}</em>`;
+            const extra = chosenOpt?.explanation_correct ? `<br><em>${chosenOpt.explanation_correct}</em>` : "";
+            fb.innerHTML = `✔ Correcto${extra}`;
             fb.className = "rowfb ok";
           } else {
-            fb.innerHTML = `✘ Incorrecto<br><em>${chosen.explanation}</em><br>La correcta era: ${correct.text}.`;
+            const extra = chosenOpt?.explanation_wrong ? `<br><em>${chosenOpt.explanation_wrong}</em>` : "";
+            fb.innerHTML = `✘ Incorrecto${extra}`;
             fb.className = "rowfb bad";
           }
         } else {
