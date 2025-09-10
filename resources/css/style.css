@@ -1,0 +1,135 @@
+/* ===== Reset & base ===== */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body, h1, h2, p, ul { margin: 0; padding: 0; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a; /* azul muy oscuro */
+  color: #e5e7eb;      /* gris muy claro */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header fijo negro ===== */
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0; right: 0;
+  height: 76px;
+  background: #000;             /* negro sólido */
+  border-bottom: 2px solid #38bdf8;
+  display: flex;
+  align-items: center;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;                   /* separación entre logo y título */
+  padding-left: 12px;          /* respiración mínima izquierda */
+}
+.logo-badge {
+  height: 56px;
+  width: 56px;
+  border-radius: 8px;
+  background: #000;            /* fondo uniforme */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-badge img {
+  max-height: 44px;
+  max-width: 44px;
+  display: block;
+}
+.header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e5e7eb;
+}
+
+/* ===== Main layout ===== */
+.container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 24px;
+  padding: 24px;
+  margin-top: 76px;   /* altura del header */
+  margin-bottom: 76px;/* altura del footer */
+}
+
+/* ===== Panel: Temario ===== */
+.temario h2 {
+  margin: 6px 0 14px;
+  letter-spacing: .2px;
+}
+#chapters-container > details {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  padding: 10px 12px;
+  transition: border-color .2s, box-shadow .2s;
+}
+#chapters-container > details:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59,130,246,.15);
+}
+#chapters-container summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: #facc15;
+  list-style: none;
+}
+#chapters-container summary::-webkit-details-marker { display: none; }
+#chapters-container ul {
+  list-style: none;
+  margin-top: 12px;
+  padding-left: 4px;
+}
+#chapters-container li { margin: 8px 0; }
+#chapters-container a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+#chapters-container a:hover { text-decoration: underline; }
+
+/* ===== Panel: Recursos ===== */
+.recursos {
+  background: #0b1220;
+  border-left: 2px solid #334155;
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+.recursos h2 { margin-bottom: 10px; }
+#resources-list { list-style: none; }
+#resources-list li { margin: 10px 0; }
+#resources-list a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+#resources-list a:hover { text-decoration: underline; }
+
+/* ===== Footer fijo ===== */
+.footer {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 76px;
+  background: #000;             /* negro sólido */
+  border-top: 2px solid #38bdf8;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 20px;
+}
+.footer a { color: #38bdf8; text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+.footer .social img {
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+  opacity: .9;
+}
+.footer .social img:hover { opacity: 1; }
