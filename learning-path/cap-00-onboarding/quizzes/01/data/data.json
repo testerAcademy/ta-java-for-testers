@@ -1,0 +1,104 @@
+{
+  "title": "Quiz — Onboarding Example",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple",
+      "instructions": "Selecciona la respuesta correcta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Crees poder aprender Java con este curso?",
+          "options": [
+            {
+              "option": "a",
+              "text": "No lo se, dependera de mis ganas y cuanto practique.",
+              "explanation_correct": "",
+              "explanation_wrong": "No esta mal tu sentir, pero ten más animo, si te lo propones con ayuda de este curso vas a ser alguien que domine las bases de Java"
+            },
+            {
+              "option": "b",
+              "text": "Si, tengo toda la actitud y ganas de aprender y practicar",
+              "explanation_correct": "Esa es la actitud, pronto seras un profesional que sepa las bases de Java. Siguiente paso ser QA Automation",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Voy a intentarlo",
+              "explanation_correct": "",
+              "explanation_wrong": "No esta mal tu sentir, confia más en ti se que lo vas a lograr"
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "¿Qué lenguaje corresponde al siguiente fragmento de código?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Python",
+              "explanation_correct": "",
+              "explanation_wrong": "Este no es Python"
+            },
+            {
+              "option": "b",
+              "text": "Java",
+              "explanation_correct": "Correcto, la sintaxis es de Java",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "C#",
+              "explanation_correct": "C# es similar, pero aquí no aplica.",
+              "explanation_wrong": "La sintaxis es similar a C#, pero la palabra clave System.out.println es exclusiva de Java."
+            }
+          ],
+          "answer": "b",
+          "image": "images/ejemplo.png"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "matches",
+      "title": "Sección 2 — Relacionar",
+      "instructions": "Relaciona cada enunciado con la tarjeta correcta.",
+      "pairs": [
+        {"text": "Instrucciones de código con cierta sintaxis que permiten comunicarse con el computador para crear programas de computador", "answer": "b"},
+        {"text": "Es un lenguaje de programación", "answer": "a"},
+        {"text": "Es replicar acciones de usuario/tester para probar casos de prueba de forma automatica a travez de scripts creados en un lenguaje de programación",
+          "answer": "d"},
+        {"text": "Persona encargada de salva guardar la cálidad del software y productos digitales", "answer": "c"}
+      ],
+      "options": [
+        {
+          "option": "a",
+          "text": "Java",
+          "explanation_correct": "Correcto, Eso es un lenguaje de programación",
+          "explanation_wrong": "Si no sabes sobre Java, don´t worry pronto lo aprenderas"
+        },
+        {
+          "option": "b",
+          "text": "Lenguajes de programación",
+          "explanation_correct": "Correcto",
+          "explanation_wrong": "Como se comunica el código con un computador, como se comunican los humanos, a travez de..."
+        },
+        {
+          "option": "c",
+          "text": "Tester",
+          "explanation_correct": "Correcto,",
+          "explanation_wrong": "¿Qué Rol es el encargado de garantizar la cálidad del software?"
+        },
+        {
+          "option": "d",
+          "text": "Automatización de pruebas",
+          "explanation_correct": "Correcto, el siguiente paso sera convertirte en QA Automation",
+          "explanation_wrong": "Despues de aprender sobre Java, podras comenzar un path como automatizador de pruebas"
+        }
+      ]
+    }
+  ]
+}
