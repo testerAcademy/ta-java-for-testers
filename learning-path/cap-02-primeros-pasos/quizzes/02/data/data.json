@@ -1,0 +1,273 @@
+{
+  "title": "Quiz 02 — Capítulo 2: Introducción a Java — Pilares de la POO",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple",
+      "instructions": "Selecciona la respuesta correcta en cada pregunta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Qué significa Encapsulamiento en POO?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Ocultar los detalles internos y exponer solo lo necesario.",
+              "explanation_correct": "Correcto, encapsulamiento significa proteger los datos internos y mostrar solo lo indispensable.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Permitir que una clase herede de otra.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso es herencia, no encapsulamiento."
+            },
+            {
+              "option": "c",
+              "text": "Hacer que un objeto pueda tener varias formas.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso corresponde a polimorfismo."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "¿Qué representa el principio de Abstracción?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Mostrar todos los detalles posibles de un objeto.",
+              "explanation_correct": "",
+              "explanation_wrong": "Abstracción es lo contrario: ocultar lo irrelevante."
+            },
+            {
+              "option": "b",
+              "text": "Enfocarse en lo esencial y ocultar lo que no es necesario.",
+              "explanation_correct": "Correcto, abstracción significa simplificar y modelar lo esencial.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Reutilizar código de otra clase.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso es herencia, no abstracción."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q3",
+          "text": "¿Qué permite la Herencia en POO?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Que una clase reutilice atributos y métodos de otra clase.",
+              "explanation_correct": "Correcto, la herencia permite extender y reutilizar código.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Que un objeto o método se comporte de distintas formas.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso es polimorfismo, no herencia."
+            },
+            {
+              "option": "c",
+              "text": "Que se oculten los detalles internos de una clase.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso corresponde al encapsulamiento."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q4",
+          "text": "¿Qué es Polimorfismo en POO?",
+          "options": [
+            {
+              "option": "a",
+              "text": "La capacidad de un objeto de tomar diferentes formas o comportamientos.",
+              "explanation_correct": "Correcto, polimorfismo significa que un mismo método puede comportarse de diferentes maneras.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Que una clase pueda heredar de varias clases.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso es herencia múltiple, no polimorfismo."
+            },
+            {
+              "option": "c",
+              "text": "Que un programa se ejecute en varios sistemas operativos.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso describe la multiplataforma, no el polimorfismo."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q5",
+          "text": "Un restaurante tiene meseros y cada uno sabe 'tomarPedido()'. Sin importar el mesero, siempre cumplen la misma acción: tomar pedidos. ¿Qué principio se aplica?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Polimorfismo",
+              "explanation_correct": "Correcto, distintos objetos (meseros) comparten un mismo comportamiento.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Herencia",
+              "explanation_correct": "",
+              "explanation_wrong": "Herencia no aplica aquí, es sobre reutilizar atributos y métodos."
+            },
+            {
+              "option": "c",
+              "text": "Encapsulamiento",
+              "explanation_correct": "",
+              "explanation_wrong": "Encapsulamiento trata de proteger datos, no de ejecutar comportamientos similares."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q6",
+          "text": "Un coche tiene atributos como 'color' y 'marca'. Una clase Coche hereda de la clase Vehículo. ¿Qué principio se aplica?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Herencia",
+              "explanation_correct": "Correcto, la clase Coche hereda de Vehículo.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Abstracción",
+              "explanation_correct": "",
+              "explanation_wrong": "Esto no es abstracción, es herencia."
+            },
+            {
+              "option": "c",
+              "text": "Encapsulamiento",
+              "explanation_correct": "",
+              "explanation_wrong": "Encapsulamiento no aplica aquí, no se habla de ocultar datos."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q7",
+          "text": "Como usuario de un cajero automático, solo te importa retirar dinero, no cómo internamente el banco procesa la transacción. ¿Qué principio se aplica?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Encapsulamiento",
+              "explanation_correct": "",
+              "explanation_wrong": "Encapsulamiento es sobre proteger datos, no es lo que describe el ejemplo."
+            },
+            {
+              "option": "b",
+              "text": "Abstracción",
+              "explanation_correct": "Correcto, abstracción significa centrarse en lo esencial y ocultar los procesos internos.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Polimorfismo",
+              "explanation_correct": "",
+              "explanation_wrong": "Polimorfismo es sobre diferentes comportamientos de un método, no sobre ocultar detalles internos."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q8",
+          "text": "La clase Empleado tiene un atributo 'salario'. Solo se puede modificar usando un método setSalario(). ¿Qué principio se aplica?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Abstracción",
+              "explanation_correct": "",
+              "explanation_wrong": "Abstracción no aplica aquí, esto es control de acceso a datos."
+            },
+            {
+              "option": "b",
+              "text": "Herencia",
+              "explanation_correct": "",
+              "explanation_wrong": "Herencia no aplica aquí, no se habla de reutilizar código."
+            },
+            {
+              "option": "c",
+              "text": "Encapsulamiento",
+              "explanation_correct": "Correcto, encapsulamiento protege datos a través de métodos controlados.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q9",
+          "text": "En una aplicación, un método 'enviarNotificación()' puede enviar un correo, un SMS o una alerta en la app según el contexto. ¿Qué principio se aplica?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Herencia",
+              "explanation_correct": "",
+              "explanation_wrong": "Herencia no aplica aquí, esto es sobre comportamientos distintos."
+            },
+            {
+              "option": "b",
+              "text": "Polimorfismo",
+              "explanation_correct": "Correcto, un mismo método puede tener diferentes comportamientos según el caso.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Abstracción",
+              "explanation_correct": "",
+              "explanation_wrong": "Abstracción no aplica aquí, esto es sobre ocultar lo irrelevante."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q10",
+          "text": "En un sistema escolar, la clase Estudiante y la clase Profesor heredan de la clase Persona. ¿Qué principio se aplica?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Encapsulamiento",
+              "explanation_correct": "",
+              "explanation_wrong": "Encapsulamiento es sobre proteger datos, no heredar atributos."
+            },
+            {
+              "option": "b",
+              "text": "Abstracción",
+              "explanation_correct": "",
+              "explanation_wrong": "Abstracción no aplica aquí, esto es herencia."
+            },
+            {
+              "option": "c",
+              "text": "Herencia",
+              "explanation_correct": "Correcto, tanto Estudiante como Profesor heredan atributos y métodos de Persona.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
