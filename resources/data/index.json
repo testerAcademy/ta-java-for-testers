@@ -19,14 +19,6 @@
   ],
   "chapters": [
     {
-      "title": "HOLA COMO ESTAS",
-      "pdf": "learning-path/cap-00-onboarding/capitulo-00.pdf",
-      "quizzes": ["learning-path/cap-00-onboarding/quizzes/01/quiz.html"],
-      "videos": ["#"],
-      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-00-onboarding/code",
-      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-00-onboarding/materiales_extra"
-    },
-    {
       "title": "Onboarding",
       "pdf": "learning-path/cap-00-onboarding/capitulo-00.pdf",
       "quizzes": ["learning-path/cap-00-onboarding/quizzes/01/quiz.html"],
