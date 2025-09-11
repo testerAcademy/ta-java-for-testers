@@ -117,6 +117,17 @@ body {
 }
 .resources i { width: 20px; text-align: center; }
 
+ /* Liks de los recursos */
+aside a {
+  color: #38bdf8;              /* Azul claro como footer */
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;  /* Subrayado en hover */
+  color: #facc15;              /* Amarillo en hover */
+}
+
 /* Footer */
 footer {
   position: fixed;
