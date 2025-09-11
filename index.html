@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Tester Academy</title>
-    <link rel="stylesheet" href="resources/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Java for Testers — Tester Academy</title>
+    <link rel="stylesheet" href="resources/css/style.css" />
+
+    <!-- Font Awesome para íconos -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-<!-- Header fijo (negro) -->
 <header class="header">
-    <div class="header-inner">
-        <div class="logo-badge">
-            <img src="resources/images/logo.png" alt="Logo TA">
-        </div>
-        <h1 id="course-title"></h1>
+    <div class="logo-title">
+        <img src="resources/images/logo.png" alt="Logo TA" class="logo" />
+        <h1 id="courseTitle">Java for Testers</h1>
     </div>
 </header>
 
-<!-- Layout principal -->
-<main class="container">
-    <!-- Panel izquierdo: Temario -->
-    <section class="temario">
-        <h2>📘 Temario</h2>
-        <div id="chapters-container"></div>
-    </section>
+<main>
+    <section class="content">
+        <div class="chapters">
+            <h2>📘 Temario</h2>
+            <div id="chaptersContainer"></div>
+        </div>
 
-    <!-- Panel derecho: Recursos -->
-    <aside class="recursos">
-        <h2>🔗 Recursos</h2>
-        <ul id="resources-list"></ul>
-    </aside>
+        <aside class="resources">
+            <h2>🔗 Recursos</h2>
+            <ul id="resourcesList"></ul>
+        </aside>
+    </section>
 </main>
 
-<!-- Footer fijo -->
-<footer class="footer">
-    <p id="footer-text"></p>
-    <div class="social" id="social-links"></div>
+<footer>
+    <p id="footerText"></p>
+    <div class="legal">
+        <a id="privacyLink" target="_blank">Aviso de privacidad</a>
+        <span class="sep">|</span>
+        <a id="termsLink" target="_blank">Términos y condiciones</a>
+    </div>
+    <div class="social" id="socialLinks"></div>
 </footer>
 
 <script src="resources/js/script.js"></script>
