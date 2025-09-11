@@ -37,7 +37,10 @@
     {
       "title": "Capítulo 2 — Introducción a Java",
       "pdf": "learning-path/cap-02-introduccion/capitulo-02.pdf",
-      "quizzes": ["learning-path/cap-02-introduccion/quizzes/01/quiz.html"],
+      "quizzes": [
+        "learning-path/cap-02-introduccion/quizzes/01/quiz.html",
+        "learning-path/cap-02-introduccion/quizzes/02/quiz.html"
+      ],
       "videos": ["#"],
       "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-02-introduccion/code",
       "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-02-introduccion/materiales_extra"
@@ -105,15 +108,19 @@
     "termsUrl": "#",
     "social": [
       {
+        "icon": "fa-brands fa-facebook",
+        "url": "#"
+      },
+      {
+        "icon": "fa-brands fa-instagram",
+        "url": "#"
+      },
+      {
         "icon": "fa-brands fa-youtube",
         "url": "#"
       },
       {
-        "icon": "fa-brands fa-github",
-        "url": "https://github.com/testerAcademy/ta-java-for-testers"
-      },
-      {
-        "icon": "fa-brands fa-linkedin",
+        "icon": "fa-brands fa-globe",
         "url": "#"
       }
     ]
