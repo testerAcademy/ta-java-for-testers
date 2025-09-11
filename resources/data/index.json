@@ -8,13 +8,13 @@
     },
     {
       "label": "Playlist completa en YouTube",
-      "url": "https://youtube.com/playlist?...",
+      "url": "https://www.youtube.com/playlist?list=PLVC0we3NbVUz4OoqsHWNUn0Zj9kooIAFz",
       "icon": "fa-brands fa-youtube"
     },
     {
-      "label": "Materiales generales",
+      "label": "Contactanos",
       "url": "#",
-      "icon": "fa-solid fa-folder-open"
+      "icon": "fa-solid fa-comments"
     }
   ],
   "chapters": [
