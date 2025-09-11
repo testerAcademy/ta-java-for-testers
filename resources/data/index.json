@@ -105,23 +105,23 @@
   "footer": {
     "text": "© 2025 Tester Academy — Todos los derechos reservados",
     "privacyUrl": "https://img1.wsimg.com/blobby/go/a3d8b324-7efd-4ff1-bd37-e81b36049045/downloads/AVISO%20DE%20PRIVACIDAD.pdf?ver=1678319079700",
-    "termsUrl": "#",
+    "termsUrl": "https://img1.wsimg.com/blobby/go/a3d8b324-7efd-4ff1-bd37-e81b36049045/downloads/AVISO%20DE%20PRIVACIDAD.pdf?ver=1678319079700",
     "social": [
       {
+        "icon": "fa-solid fa-house",
+        "url": "https://testeracademy.com.mx/"
+      },
+      {
         "icon": "fa-brands fa-facebook",
-        "url": "#"
+        "url": "https://www.facebook.com/TesterAcademy"
       },
       {
         "icon": "fa-brands fa-instagram",
-        "url": "#"
+        "url": "https://www.instagram.com/TesterAcademy/"
       },
       {
         "icon": "fa-brands fa-youtube",
-        "url": "#"
-      },
-      {
-        "icon": "fa-brands fa-globe",
-        "url": "#"
+        "url": "https://www.youtube.com/@testeracademy77"
       }
     ]
   }
