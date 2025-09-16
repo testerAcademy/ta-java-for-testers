@@ -98,6 +98,7 @@ body {
 }
 #chaptersContainer a:hover {
   text-decoration: underline;
+  color: #facc15;              /* Amarillo en hover */
 }
 
 /* Recursos */
