@@ -35,7 +35,6 @@
       "videos": [
         { "label": "video nombre", "url": "https://youtube.com/..." }
       ],
-      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-01-instalacion-software/code",
       "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-01-instalacion-software/materiales_extra"
     },
     {
