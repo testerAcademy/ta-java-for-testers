@@ -28,12 +28,6 @@ fetch("resources/data/index.json")
         ul.innerHTML += `<li><i class="fa-solid fa-file-pdf"></i><a href="${ch.pdf}" target="_blank">PDF</a></li>`;
       }
 
-      if (Array.isArray(ch.quizzes) && ch.quizzes.length) {
-        ch.quizzes.forEach((q, i) => {
-          ul.innerHTML += `<li><i class="fa-solid fa-list-check"></i><a href="${q}" target="_blank">Quiz ${i + 1}</a></li>`;
-        });
-      }
-
       if (Array.isArray(ch.videos) && ch.videos.length) {
         ch.videos.forEach((v, i) => {
           ul.innerHTML += `<li><i class="fa-brands fa-youtube"></i><a href="${v}" target="_blank">Video ${i + 1}</a></li>`;
@@ -42,6 +36,12 @@ fetch("resources/data/index.json")
 
       if (ch.code) {
         ul.innerHTML += `<li><i class="fa-solid fa-code"></i><a href="${ch.code}" target="_blank">Código</a></li>`;
+      }
+
+      if (Array.isArray(ch.quizzes) && ch.quizzes.length) {
+        ch.quizzes.forEach((q, i) => {
+          ul.innerHTML += `<li><i class="fa-solid fa-list-check"></i><a href="${q}" target="_blank">Quiz ${i + 1}</a></li>`;
+        });
       }
 
       if (ch.extras) {
