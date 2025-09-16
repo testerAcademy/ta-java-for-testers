@@ -30,7 +30,7 @@ fetch("resources/data/index.json")
 
       if (Array.isArray(ch.videos) && ch.videos.length) {
         ch.videos.forEach((v, i) => {
-          ul.innerHTML += `<li><i class="fa-brands fa-youtube"></i><a href="${v}" target="_blank">Video ${i + 1}</a></li>`;
+          ul.innerHTML += `<li><i class="fa-brands fa-youtube"></i><a href="${v.url}" target="_blank">${i + 1}.-  ${v.label}</a></li>`;
         });
       }
 
