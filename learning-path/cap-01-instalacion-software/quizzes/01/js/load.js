@@ -1,6 +1,7 @@
 // Render dinámico desde data.json (v2.1 con options {option, text})
 (async function loadQuiz(){
-  const res = await fetch("data/data.json");
+  const path = document.querySelector('meta[name="quiz-data"]').content;
+  const res = await fetch(path);
   const data = await res.json();
 
   // Header
