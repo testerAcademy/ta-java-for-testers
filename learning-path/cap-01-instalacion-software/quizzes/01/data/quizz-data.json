@@ -1,0 +1,143 @@
+{
+  "title": "Quiz — Capítulo 1: Instalación de JDK e IntelliJ",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple",
+      "instructions": "Selecciona la respuesta correcta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Qué es el JDK y para qué sirve?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Es un editor de texto para escribir código",
+              "explanation_correct": "",
+              "explanation_wrong": "El JDK no es un editor, es el kit de desarrollo."
+            },
+            {
+              "option": "b",
+              "text": "Es el kit de desarrollo de Java, necesario para crear y ejecutar programas",
+              "explanation_correct": "Correcto, con el JDK puedes compilar y ejecutar programas en Java.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Es un navegador web especializado",
+              "explanation_correct": "",
+              "explanation_wrong": "No tiene nada que ver con un navegador."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "¿Cuál de estas opciones NO sirve para descargar el JDK?",
+          "options": [
+            {
+              "option": "a",
+              "text": "https://jdk.java.net/archive/",
+              "explanation_correct": "",
+              "explanation_wrong": "Sí, aquí puedes obtener versiones antiguas del JDK."
+            },
+            {
+              "option": "b",
+              "text": "https://java.oracle.com/store/",
+              "explanation_correct": "",
+              "explanation_wrong": "Sí, es un sitio oficial de Oracle para Java."
+            },
+            {
+              "option": "c",
+              "text": "https://www.jetbrains.com/idea/",
+              "explanation_correct": "Correcto, ese sitio es para descargar IntelliJ IDEA, no el JDK.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q3",
+          "text": "¿Qué es IntelliJ IDEA?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Un compilador de Java",
+              "explanation_correct": "",
+              "explanation_wrong": "No es solo un compilador, es mucho más."
+            },
+            {
+              "option": "b",
+              "text": "Un IDE (entorno de desarrollo) para programar en un lenguaje de programación",
+              "explanation_correct": "Correcto, es un entorno de desarrollo completo para Java y otros lenguajes.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Una extensión de navegador",
+              "explanation_correct": "",
+              "explanation_wrong": "No, IntelliJ es un programa completo, no una extensión."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q4",
+          "text": "¿Qué se puede explorar dentro de IntelliJ según el curso?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Solo el explorador de archivos",
+              "explanation_correct": "",
+              "explanation_wrong": "IntelliJ ofrece muchas más funciones que solo archivos."
+            },
+            {
+              "option": "b",
+              "text": "Panel de proyecto, terminal, configuración, plugins y run configuration",
+              "explanation_correct": "Correcto, esas son partes importantes de la IDE.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Únicamente la consola de errores",
+              "explanation_correct": "",
+              "explanation_wrong": "No es lo único que puedes usar."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q5",
+          "text": "¿Qué team eres?",
+          "options": [
+            {
+              "option": "a",
+              "text": "IDE Dark mode 🌙",
+              "explanation_correct": "¡Buena elección! El modo oscuro cuida tu vista.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "IDE Light mode ☀️",
+              "explanation_correct": "Bien, mientras estés cómodo programando, muchos támbien lo usamos.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Ambos modos ☀️🌙",
+              "explanation_correct": "Correcto, lo importante es que uses el que te funcione mejor en cada momento.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "any",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
