@@ -4,7 +4,7 @@ document.getElementById("gradeTop").addEventListener("click", gradeQuiz);
 document.getElementById("resetTop").addEventListener("click", resetQuiz);
 
 async function gradeQuiz(){
-  const res = await fetch("data/quizz-data.json");
+  const res = await fetch("data/data.json");
   const data = await res.json();
 
   let score = 0;
