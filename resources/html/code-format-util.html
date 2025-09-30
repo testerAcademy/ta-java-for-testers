@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Code Formatter</title>
+
+    <!-- Highlight.js core + lenguajes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+
+    <!-- Temas precargados (uno activo a la vez) -->
+    <link rel="stylesheet" class="hljs-theme" title="github-dark"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" class="hljs-theme" title="dracula" disabled
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dracula.min.css">
+    <link rel="stylesheet" class="hljs-theme" title="monokai" disabled
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css">
+    <link rel="stylesheet" class="hljs-theme" title="atom-one-dark" disabled
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+
+    <style>
+        :root{ --bg:#2E2E2E; --panel:#1E1E1E; }
+        *{ box-sizing:border-box; }
+        body{
+          margin:0; height:100vh; display:flex; flex-direction:column;
+          background:var(--bg); color:#ddd;
+          font:15px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+        }
+        header{
+          background:var(--panel); padding:10px; display:flex; gap:12px; align-items:center; flex-wrap:wrap;
+        }
+        header select, header input[type=file]{ font-size:14px; }
+        header button{
+          background:#ff5555; color:#fff; border:0; border-radius:6px; padding:6px 12px;
+          font-weight:700; cursor:pointer;
+        }
+        header button:hover{ background:#ff7777; }
+        main{
+          flex:1; min-height:0; display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:12px;
+        }
+        .pane{ height:100%; }
+        textarea{
+          width:100%; height:100%; resize:none; border:0; outline:0;
+          border-radius:10px; padding:16px; background:var(--panel); color:#eee; font-size:14px;
+        }
+        pre{
+          margin:0; height:100%; overflow:auto; border-radius:10px; padding:0; /* padding lo pone .hljs */
+          background:transparent;
+        }
+        /* Asegura padding, bg y bordes del bloque coloreado (independiente del tema) */
+        code.hljs{
+          display:block; padding:16px; border-radius:10px;
+        }
+        /* Evita manchas al pegar en Slides */
+        .hljs span{ background:transparent !important; }
+    </style>
+</head>
+<body>
+<header>
+    <label for="language">Lenguaje:</label>
+    <select id="language">
+        <option value="auto" selected>Auto (detectar)</option>
+        <option value="java">Java</option>
+        <option value="xml">XML</option>
+        <option value="json">JSON</option>
+        <option value="html">HTML</option>
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+    </select>
+
+    <label for="theme">Tema:</label>
+    <select id="theme">
+        <option value="github-dark" selected>GitHub Dark</option>
+        <option value="dracula">Dracula</option>
+        <option value="monokai">Monokai</option>
+        <option value="atom-one-dark">Atom One Dark</option>
+    </select>
+
+    <input type="file" id="fileInput" accept=".java,.json,.xml,.html,.htm,.py,.js,.txt" />
+    <button id="formatBtn">Formatear</button>
+    <button id="copyBtn">Copiar código</button>
+</header>
+
+<main>
+    <div class="pane">
+      <textarea id="inputCode" placeholder="Pega tu código aquí...">public class HolaJava {
+    public static void main(String[] args) {
+        System.out.println("¡Hola Java, soy tester!");
+    }
+}</textarea>
+    </div>
+
+    <div class="pane">
+        <pre id="outputPre"><code id="outputCode" class="hljs"></code></pre>
+    </div>
+</main>
+
+<script>
+    const inputCode   = document.getElementById('inputCode');
+    const outputPre   = document.getElementById('outputPre');
+    const outputCode  = document.getElementById('outputCode');
+    const languageSel = document.getElementById('language');
+    const themeSel    = document.getElementById('theme');
+    const fileInput   = document.getElementById('fileInput');
+
+    const AUTO_LIST = ['java','xml','json','html','python','javascript'];
+
+    // Activa el tema seleccionado
+    function setTheme(name){
+      document.querySelectorAll('link.hljs-theme').forEach(link=>{
+        link.disabled = (link.getAttribute('title') !== name);
+      });
+    }
+
+    // Lenguaje por extensión
+    function langFromFilename(filename){
+      const ext = (filename.split('.').pop() || '').toLowerCase();
+      const map = { java:'java', xml:'xml', json:'json', html:'html', htm:'html',
+                    py:'python', js:'javascript', txt:'auto' };
+      return map[ext] || 'auto';
+    }
+
+    // Render del bloque (aplica lenguaje + tema)
+    function refresh(){
+      const code = inputCode.value ?? '';
+      const lang = languageSel.value;
+
+      outputCode.className = 'hljs'; // limpia clases
+      outputCode.innerHTML = '';     // limpia contenido
+
+      let result;
+      if(lang === 'auto'){
+        result = hljs.highlightAuto(code, AUTO_LIST);
+        if(result.language){
+          outputCode.classList.add(`language-${result.language}`);
+        }
+      } else {
+        result = hljs.highlight(code, {language: lang});
+        outputCode.classList.add(`language-${lang}`);
+      }
+
+      outputCode.innerHTML = result.value;
+    }
+
+    // Copiar con formato (emula selección humana para preservar colores)
+    function copyFormatted(){
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(outputPre);         // copia todo el bloque, fondo y colores
+      selection.removeAllRanges();
+      selection.addRange(range);
+      const ok = document.execCommand('copy');     // copia HTML enriquecido
+      selection.removeAllRanges();
+      alert(ok ? 'Código copiado con formato ✔️' : 'No se pudo copiar. Selecciona y usa Ctrl+C.');
+    }
+
+    // Eventos
+    themeSel.addEventListener('change', e => { setTheme(e.target.value); refresh(); });
+    languageSel.addEventListener('change', refresh);
+    document.getElementById('formatBtn').addEventListener('click', refresh);
+    document.getElementById('copyBtn').addEventListener('click', copyFormatted);
+
+    fileInput.addEventListener('change', (e)=>{
+      const f = e.target.files?.[0]; if(!f) return;
+      const reader = new FileReader();
+      reader.onload = ev => { inputCode.value = ev.target.result; refresh(); };
+      reader.readAsText(f);
+      languageSel.value = langFromFilename(f.name);
+    });
+
+    // Init
+    setTheme(themeSel.value);
+    refresh();
+</script>
+</body>
+</html>
