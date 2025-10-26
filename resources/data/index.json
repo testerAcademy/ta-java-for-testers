@@ -22,9 +22,11 @@
       "title": "Onboarding",
       "pdf": "learning-path/cap-00-onboarding/capitulo-00.pdf",
       "videos": [
-        { "label": "¿Qué es QA?", "url": "https://youtube.com/..." },
-        { "label": "Instalación de entorno", "url": "https://youtube.com/..." },
-        { "label": "Primer script", "url": "https://youtube.com/..." }
+        { "label": "Onboring, acerca del curso", "url": "https://youtube.com/..." },
+        { "label": "Temario", "url": "https://youtube.com/..." },
+        { "label": "La pagina del curso", "url": "https://youtube.com/..." },
+        { "label": "Quiz y actividades", "url": "https://youtube.com/..." },
+        { "label": "Recursos del curso", "url": "https://youtube.com/..." }
       ],
       "quizzes": ["learning-path/cap-00-onboarding/quizzes/01/quiz.html"]
     },
