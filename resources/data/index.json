@@ -22,8 +22,8 @@
       "title": "Onboarding",
       "pdf": "learning-path/cap-00-onboarding/capitulo-00.pdf",
       "videos": [
-        { "label": "Sobre el curso", "url": "https://youtube.com/..." },
-        { "label": "Temario", "url": "https://youtube.com/..." },
+        { "label": "Sobre el curso", "url": "https://youtu.be/jqolaJfFPps" },
+        { "label": "Temario", "url": "https://youtu.be/h-5_hBAkoyM" },
         { "label": "Página del Curso", "url": "https://youtube.com/..." },
         { "label": "Quiz y Actividades", "url": "https://youtube.com/..." },
         { "label": "Recursos del Curso ", "url": "https://youtube.com/..." }
