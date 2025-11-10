@@ -1,0 +1,153 @@
+{
+  "title": "Java for Testers",
+  "resources": [
+    {
+      "label": "Repositorio GitHub",
+      "url": "https://github.com/testerAcademy/ta-java-for-testers",
+      "icon": "fa-brands fa-github"
+    },
+    {
+      "label": "Playlist completa en YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLVC0we3NbVUz4OoqsHWNUn0Zj9kooIAFz",
+      "icon": "fa-brands fa-youtube"
+    },
+    {
+      "label": "Contáctanos (cursos a la medida)",
+      "url": "https://testeracademy.com.mx/contacto",
+      "icon": "fa-solid fa-envelope"
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Onboarding",
+      "pdf": "learning-path/cap-00-onboarding/capitulo-00.pdf",
+      "videos": [
+        { "label": "Sobre el curso", "url": "https://youtu.be/jqolaJfFPps" },
+        { "label": "Temario", "url": "https://youtu.be/h-5_hBAkoyM" },
+        { "label": "Página del Curso", "url": "https://youtu.be/NhvXyt1YYpY" },
+        { "label": "Quiz y Actividades", "url": "https://youtu.be/NnAsfmJZYOY" },
+        { "label": "Recursos del Curso ", "url": "https://youtu.be/Z39y60AI4iA" }
+      ],
+      "quizzes": ["learning-path/cap-00-onboarding/quizzes/01/quiz.html"]
+    },
+    {
+      "title": "Capítulo 1 — Instalación del software requerido",
+      "pdf": "learning-path/cap-01-instalacion-software/capitulo-01.pdf",
+      "quizzes": ["learning-path/cap-01-instalacion-software/quizzes/01/quiz.html"],
+      "videos": [
+        { "label": "Instalar JDK", "url": "https://youtu.be/fB-KE-IPHuM" },
+        { "label": "JDK otras opciones", "url": "https://youtu.be/GQ8-4vRi7EE" },
+        { "label": "Instalar IntelliJ", "url": "https://youtu.be/_Q9OQrdJiN4" },
+        { "label": "Un paseo por IntelliJ", "url": "https://youtu.be/HIYTUAFnskw" },
+        { "label": "Fin del capítulo", "url": "https://youtu.be/PZGVlGmft_I" }
+      ],
+      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-01-instalacion-software/materiales_extra"
+    },
+    {
+      "title": "Capítulo 2 — Introducción a Java",
+      "pdf": "learning-path/cap-02-introduccion/capitulo-02.pdf",
+      "quizzes": [
+        "learning-path/cap-02-introduccion/quizzes/01/quiz.html",
+        "learning-path/cap-02-introduccion/quizzes/02/quiz.html"
+      ],
+      "videos": [
+        { "label": "video nombre", "url": "https://youtube.com/..." }
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-02-introduccion/code",
+      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-02-introduccion/materiales_extra"
+    },
+    {
+      "title": "Capítulo 3 — Primeros pasos con Java",
+      "pdf": "learning-path/cap-03-primeros-pasos/capitulo-03.pdf",
+      "quizzes": ["learning-path/cap-03-primeros-pasos/quizzes/01/quiz.html"],
+      "videos": [
+        { "label": "video nombre", "url": "https://youtube.com/..." }
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-03-primeros-pasos/code",
+      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-03-primeros-pasos/materiales_extra"
+    },
+    {
+      "title": "Capítulo 4 — Condicionales y Loops",
+      "pdf": "learning-path/cap-04-cond-loops/capitulo-04.pdf",
+      "quizzes": ["learning-path/cap-04-cond-loops/quizzes/01/quiz.html"],
+      "videos": [
+        { "label": "video nombre", "url": "https://youtube.com/..." }
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-04-cond-loops/code",
+      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-04-cond-loops/materiales_extra"
+    },
+    {
+      "title": "Capítulo 5 — Métodos y alcance",
+      "pdf": "learning-path/cap-05-metodos-alcance/capitulo-05.pdf",
+      "quizzes": ["learning-path/cap-05-metodos-alcance/quizzes/01/quiz.html"],
+      "videos": [
+        { "label": "video nombre", "url": "https://youtube.com/..." }
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-05-metodos-alcance/code",
+      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-05-metodos-alcance/materiales_extra"
+    },
+    {
+      "title": "Capítulo 6 — Manejo de excepciones",
+      "pdf": "learning-path/cap-05-excepciones/capitulo-06.pdf",
+      "quizzes": ["learning-path/cap-05-excepciones/quizzes/01/quiz.html"],
+      "videos": [
+        { "label": "video nombre", "url": "https://youtube.com/..." }
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-05-excepciones/code",
+      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-05-excepciones/materiales_extra"
+    },
+    {
+      "title": "Capítulo 7 — Patrones de diseño y arquitectura",
+      "pdf": "learning-path/cap-06-patrones-arq/capitulo-07.pdf",
+      "quizzes": ["learning-path/cap-06-patrones-arq/quizzes/01/quiz.html"],
+      "videos": [
+        { "label": "video nombre", "url": "https://youtube.com/..." }
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-06-patrones-arq/code",
+      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-06-patrones-arq/materiales_extra"
+    },
+    {
+      "title": "Capítulo 8 — Siguientes pasos",
+      "pdf": "learning-path/cap-07-siguientes/capitulo-08.pdf",
+      "quizzes": ["learning-path/cap-07-siguientes/quizzes/01/quiz.html"],
+      "videos": [
+        { "label": "video nombre", "url": "https://youtube.com/..." }
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-07-siguientes/code",
+      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-07-siguientes/materiales_extra"
+    },
+    {
+      "title": "Capítulo 9 — Créditos",
+      "pdf": "learning-path/cap-08-creditos/capitulo-09.pdf",
+      "quizzes": ["learning-path/cap-08-creditos/quizzes/01/quiz.html"],
+      "videos": [
+        { "label": "video nombre", "url": "https://youtube.com/..." }
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-08-creditos/code",
+      "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-08-creditos/materiales_extra"
+    }
+  ],
+  "footer": {
+    "text": "© 2025 Tester Academy — Todos los derechos reservados",
+    "privacyUrl": "https://img1.wsimg.com/blobby/go/a3d8b324-7efd-4ff1-bd37-e81b36049045/downloads/AVISO%20DE%20PRIVACIDAD.pdf?ver=1678319079700",
+    "termsUrl": "https://img1.wsimg.com/blobby/go/a3d8b324-7efd-4ff1-bd37-e81b36049045/downloads/AVISO%20DE%20PRIVACIDAD.pdf?ver=1678319079700",
+    "social": [
+      {
+        "icon": "fa-solid fa-house",
+        "url": "https://testeracademy.com.mx/"
+      },
+      {
+        "icon": "fa-brands fa-facebook",
+        "url": "https://www.facebook.com/TesterAcademy"
+      },
+      {
+        "icon": "fa-brands fa-instagram",
+        "url": "https://www.instagram.com/TesterAcademy/"
+      },
+      {
+        "icon": "fa-brands fa-youtube",
+        "url": "https://www.youtube.com/@testeracademy77"
+      }
+    ]
+  }
+}
