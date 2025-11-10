@@ -37,9 +37,9 @@
       "videos": [
         { "label": "Instalar JDK", "url": "https://youtu.be/fB-KE-IPHuM" },
         { "label": "JDK otras opciones", "url": "https://youtu.be/GQ8-4vRi7EE" },
-        { "label": "Instalar IntelliJ", "url": "https://youtube.com/..." },
-        { "label": "Un paseo por IntelliJ", "url": "https://youtube.com/..." },
-        { "label": "Fin del capítulo", "url": "https://youtube.com/..." }
+        { "label": "Instalar IntelliJ", "url": "https://youtu.be/_Q9OQrdJiN4" },
+        { "label": "Un paseo por IntelliJ", "url": "https://youtu.be/HIYTUAFnskw" },
+        { "label": "Fin del capítulo", "url": "https://youtu.be/PZGVlGmft_I" }
       ],
       "extras": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/learning-path/cap-01-instalacion-software/materiales_extra"
     },
