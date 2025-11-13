@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TA — En construcción</title>
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Font Awesome para íconos -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            referrerpolicy="no-referrer"
+    />
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #111;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 800px;
+            padding: 1rem;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 100vh;
+            object-fit: contain;
+        }
+
+        #returnMain {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            text-decoration: underline;
+            color: #ffff00;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        #returnMain:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                width: 90%;
+            }
+            .image-container img {
+                max-height: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="logo-title">
+        <img src="../images/logo.png" alt="Logo TA" class="logo" />
+        <h1 id="courseTitle">Java for Testers</h1>
+    </div>
+</header>
+
+<main>
+    <div class="image-container">
+        <img src="../images/under-construction.svg" alt="En construcción" />
+    </div>
+    <div>
+        <a id="returnMain" href="../index.html">Regresar al inicio</a>
+    </div>
+    <br></br><br></br>
+</main>
+
+<footer>
+    <p id="footerText"></p>
+    <div class="legal">
+        <a id="privacyLink" target="_blank">Aviso de privacidad</a>
+        <span class="sep">|</span>
+        <a id="termsLink" target="_blank">Términos y condiciones</a>
+    </div>
+    <div class="social" id="socialLinks"></div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
