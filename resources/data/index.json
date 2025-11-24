@@ -45,11 +45,12 @@
     },
     {
       "title": "Capítulo 2 — Introducción a Java",
-      "pdf": "resources/html/under_construction.html",
+      "pdf": "learning-path/cap-02-introduccion/capitulo-02.pdf",
       "quizzes": [
         "learning-path/cap-02-introduccion/quizzes/01/quiz.html",
         "learning-path/cap-02-introduccion/quizzes/02/quiz.html"
-      ]
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/codigo/TA_javaForTesters/src/test/java/cap02"
     },
     {
       "title": "Capítulo 3 — Primeros pasos con Java",
