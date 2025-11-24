@@ -50,6 +50,11 @@
         "learning-path/cap-02-introduccion/quizzes/01/quiz.html",
         "learning-path/cap-02-introduccion/quizzes/02/quiz.html"
       ],
+      "videos": [
+        { "label": "¿Qué es Java?", "url": "https://youtu.be/lRJ8mzrhVMI" },
+        { "label": "JDK, JRE, JVM", "url": "https://youtu.be/xkolF77TaQU" },
+        { "label": "Introducción a P.O.O", "url": "https://youtu.be/0V44nSa-uDQ" }
+      ],
       "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/codigo/TA_javaForTesters/src/test/java/cap02"
     },
     {
