@@ -53,7 +53,12 @@
       "videos": [
         { "label": "¿Qué es Java?", "url": "https://youtu.be/lRJ8mzrhVMI" },
         { "label": "JDK, JRE, JVM", "url": "https://youtu.be/xkolF77TaQU" },
-        { "label": "Introducción a P.O.O", "url": "https://youtu.be/0V44nSa-uDQ" }
+        { "label": "Introducción a P.O.O", "url": "https://youtu.be/0V44nSa-uDQ" },
+        { "label": "P.O.O - Encapsulamiento", "url": "https://youtu.be/WrmaaeXd7cU" },
+        { "label": "P.O.O - Herencia", "url": "https://youtu.be/0RS2-Gq3brc" },
+        { "label": "P.O.O - Abstracción", "url": "https://youtu.be/2Kp0QqVaX0c" },
+        { "label": "P.O.O - Polimorfismo", "url": "https://youtu.be/cnqhXVJ-rbA" },
+        { "label": "Quizzes y Actividades", "url": "resources/html/under_construction.html" }
       ],
       "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/codigo/TA_javaForTesters/src/test/java/cap02"
     },
