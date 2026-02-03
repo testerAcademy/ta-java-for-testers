@@ -13,7 +13,7 @@ package cap03;
  *  **Nota: no te preocupes por entender, métodos, IF, crear objetos de clase, más adelante aprenderas
  *  **Nota: por ahora enfocate en entender como las llaves en java van delimitando los bloques y jerarquias de código
  */
-public class Ej12_VarasClaseBloque {
+public class Ej12_VarsClaseBloque {
 
     //Variable estatica
     static String nombre = "Dave";
@@ -24,7 +24,7 @@ public class Ej12_VarasClaseBloque {
         //Variable de bloque, solo existe en main y los subloques dentro de...
         int edad = 17;
         //Crear objeto para poder invocar variables de clase, ver linea 17
-        Ej12_VarasClaseBloque estaClase = new Ej12_VarasClaseBloque();
+        Ej12_VarsClaseBloque estaClase = new Ej12_VarsClaseBloque();
 
         System.out.println(nombre);
         System.out.println(estaClase.apellido); //Variable de clase es invocada desde el objeto de clase
