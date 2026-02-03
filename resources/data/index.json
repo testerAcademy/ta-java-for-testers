@@ -77,7 +77,9 @@
         { "label": "Var Array", "url": "https://youtu.be/FGcp4VBhGhM" },
         { "label": "Var List", "url": "https://youtu.be/SH-zt6IYZKo" },
         { "label": "Var HashMap", "url": "https://youtu.be/_At4Y0baTb4" },
-        { "label": "Var HashMap desde CSV", "url": "https://youtu.be/Hl1WuXMcEKc" }
+        { "label": "Var HashMap desde CSV", "url": "https://youtu.be/Hl1WuXMcEKc" },
+        { "label": "Variables Static", "url": "https://youtu.be/CUFwseNvY6s" },
+        { "label": "Variables de Clase y Bloque", "url": "https://youtu.be/ymNwvOZciQk" }
       ],
       "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/codigo/TA_javaForTesters/src/test/java/cap03"
     },
