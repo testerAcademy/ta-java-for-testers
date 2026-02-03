@@ -64,7 +64,22 @@
     },
     {
       "title": "Capítulo 3 — Primeros pasos con Java",
-      "pdf": "resources/html/under_construction.html"
+      "pdf": "learning-path/cap-03-primeros-pasos/capitulo-03.pdf",
+      "videos": [
+        { "label": "Capitulo 3", "url": "https://youtu.be/RknbLl-oqEI" },
+        { "label": "Crear proyecto Maven", "url": "https://youtu.be/XcAyS2arJiY" },
+        { "label": "Crear una clase", "url": "https://youtu.be/q7PnoyHR2WM" },
+        { "label": "Variables", "url": "https://youtu.be/Ff0tpEtaoGI" },
+        { "label": "Var String", "url": "https://youtu.be/phAhZBFrts8" },
+        { "label": "Var Int", "url": "https://youtu.be/T247icPkB3Q" },
+        { "label": "Var Double", "url": "https://youtu.be/VEhVxG0VNEw" },
+        { "label": "Var Boolean", "url": "https://youtu.be/nNS-MOeac8w" },
+        { "label": "Var Array", "url": "https://youtu.be/FGcp4VBhGhM" },
+        { "label": "Var List", "url": "https://youtu.be/SH-zt6IYZKo" },
+        { "label": "Var HashMap", "url": "https://youtu.be/_At4Y0baTb4" },
+        { "label": "Var HashMap desde CSV", "url": "https://youtu.be/Hl1WuXMcEKc" }
+      ],
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/codigo/TA_javaForTesters/src/test/java/cap03"
     },
     {
       "title": "Capítulo 4 — Condicionales y Loops",
