@@ -1,0 +1,403 @@
+{
+  "title": "Quiz 01 — Capítulo 3: Tipos de datos y colecciones",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple",
+      "instructions": "Selecciona la respuesta correcta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Qué es Maven?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Un lenguaje de programación para Java.",
+              "explanation_correct": "",
+              "explanation_wrong": "No es un lenguaje, es una herramienta de construcción y gestión de dependencias."
+            },
+            {
+              "option": "b",
+              "text": "Una herramienta para gestionar dependencias y construir proyectos Java.",
+              "explanation_correct": "Correcto, Maven ayuda a automatizar la compilación, pruebas y dependencias.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Un editor de código para testers.",
+              "explanation_correct": "",
+              "explanation_wrong": "No es un editor de código, es una herramienta de construcción de proyectos."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "La siguiente imagen es un ejemplo de:",
+          "options": [
+            {
+              "option": "a",
+              "text": "Archivo de configuración de Selenium",
+              "explanation_correct": "",
+              "explanation_wrong": "No es un archivo de Selenium, revisa el contenido."
+            },
+            {
+              "option": "b",
+              "text": "POM de Maven",
+              "explanation_correct": "Correcto, este archivo define las dependencias y configuración del proyecto Maven.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Archivo de variables de Java",
+              "explanation_correct": "",
+              "explanation_wrong": "No representa variables ni clases Java, sino configuración."
+            }
+          ],
+          "answer": "b",
+          "image": "images/q2.png"
+        },
+        {
+          "id": "q3",
+          "text": "¿Tipo de dato para valores de texto?",
+          "options": [
+            {
+              "option": "a",
+              "text": "int",
+              "explanation_correct": "",
+              "explanation_wrong": "int es para números enteros, no texto."
+            },
+            {
+              "option": "b",
+              "text": "boolean",
+              "explanation_correct": "",
+              "explanation_wrong": "boolean es para verdadero/falso, no texto."
+            },
+            {
+              "option": "c",
+              "text": "String",
+              "explanation_correct": "Correcto, String es el tipo de dato para texto.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q4",
+          "text": "¿Tipo de dato para valores de números enteros?",
+          "options": [
+            {
+              "option": "a",
+              "text": "double",
+              "explanation_correct": "",
+              "explanation_wrong": "double es para decimales."
+            },
+            {
+              "option": "b",
+              "text": "String",
+              "explanation_correct": "",
+              "explanation_wrong": "String es para texto."
+            },
+            {
+              "option": "c",
+              "text": "int",
+              "explanation_correct": "Correcto, int es el tipo de dato para números enteros.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q5",
+          "text": "¿Tipo de dato para valores de números decimales?",
+          "options": [
+            {
+              "option": "a",
+              "text": "int",
+              "explanation_correct": "",
+              "explanation_wrong": "int es solo para números enteros."
+            },
+            {
+              "option": "b",
+              "text": "String",
+              "explanation_correct": "",
+              "explanation_wrong": "String es para texto."
+            },
+            {
+              "option": "c",
+              "text": "double",
+              "explanation_correct": "Correcto, double se usa para representar decimales.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q6",
+          "text": "¿Representan valores verdaderos o falsos?",
+          "options": [
+            {
+              "option": "a",
+              "text": "int",
+              "explanation_correct": "",
+              "explanation_wrong": "int representa números enteros, no booleanos."
+            },
+            {
+              "option": "b",
+              "text": "String",
+              "explanation_correct": "",
+              "explanation_wrong": "String es texto, no booleano."
+            },
+            {
+              "option": "c",
+              "text": "boolean",
+              "explanation_correct": "Correcto, boolean es el tipo para valores verdadero/falso.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q7",
+          "text": "¿Tipo de variable que permite agregar N cantidad de elementos (items)?",
+          "options": [
+            {
+              "option": "a",
+              "text": "String",
+              "explanation_correct": "",
+              "explanation_wrong": "String almacena texto, no listas de elementos."
+            },
+            {
+              "option": "b",
+              "text": "int",
+              "explanation_correct": "",
+              "explanation_wrong": "int almacena solo un número entero."
+            },
+            {
+              "option": "c",
+              "text": "List",
+              "explanation_correct": "Correcto, List permite almacenar múltiples elementos.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q8",
+          "text": "¿Es la representación de un dato con Keys y Values?",
+          "options": [
+            {
+              "option": "a",
+              "text": "List",
+              "explanation_correct": "",
+              "explanation_wrong": "List solo contiene valores, no pares clave-valor."
+            },
+            {
+              "option": "b",
+              "text": "Array",
+              "explanation_correct": "",
+              "explanation_wrong": "Array es una estructura indexada, no usa claves."
+            },
+            {
+              "option": "c",
+              "text": "HashMap",
+              "explanation_correct": "Correcto, HashMap almacena datos como clave-valor.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q9",
+          "text": "Leer y almacenar información de un CSV, Excel o base de datos en Java, ¿qué objetos usarías?",
+          "options": [
+            {
+              "option": "a",
+              "text": "List<String>",
+              "explanation_correct": "",
+              "explanation_wrong": "List<String> solo guarda cadenas de texto, no pares clave-valor."
+            },
+            {
+              "option": "b",
+              "text": "HashMap<String, String>",
+              "explanation_correct": "",
+              "explanation_wrong": "HashMap solo representa una fila, no múltiples registros."
+            },
+            {
+              "option": "c",
+              "text": "List<HashMap<String, Object>>",
+              "explanation_correct": "Correcto, esta combinación permite almacenar múltiples filas con diferentes claves y tipos.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q10",
+          "text": "¿Cuál de las siguientes es una variable estática?",
+          "options": [
+            {
+              "option": "a",
+              "text": "String nombre = \"david\";",
+              "explanation_correct": "",
+              "explanation_wrong": "Falta la palabra clave static."
+            },
+            {
+              "option": "b",
+              "text": "int edad = 20;",
+              "explanation_correct": "",
+              "explanation_wrong": "No tiene static, es una variable de instancia."
+            },
+            {
+              "option": "c",
+              "text": "static String nombre = \"david\";",
+              "explanation_correct": "Correcto, tiene el modificador static.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q11",
+          "text": "La siguiente variable es de clase: static String nombre = \"david\"",
+          "options": [
+            {
+              "option": "a",
+              "text": "Sí",
+              "explanation_correct": "",
+              "explanation_wrong": "No es necesariamente de clase, depende del contexto."
+            },
+            {
+              "option": "b",
+              "text": "Depende dónde se use",
+              "explanation_correct": "",
+              "explanation_wrong": "Buena intuición, pero la definición de clase va más allá."
+            },
+            {
+              "option": "c",
+              "text": "No",
+              "explanation_correct": "Correcto, aunque sea static, también puede ser global o de otro nivel.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q12",
+          "text": "¿Qué es una variable de bloque en Java?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Una variable que se usa en toda la clase",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso sería una variable de clase, no de bloque."
+            },
+            {
+              "option": "b",
+              "text": "Una variable estática",
+              "explanation_correct": "",
+              "explanation_wrong": "Las variables estáticas no están limitadas a bloques."
+            },
+            {
+              "option": "c",
+              "text": "Una variable que solo existe dentro de un bloque {} como un if o un for",
+              "explanation_correct": "Correcto, ese es el comportamiento de una variable de bloque.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q13",
+          "text": "¿Cuál es la principal diferencia entre un dato primitivo y uno de referencia?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Los datos primitivos solo se usan en JavaScript.",
+              "explanation_correct": "",
+              "explanation_wrong": "No confundas lenguajes. Aquí hablamos de Java."
+            },
+            {
+              "option": "b",
+              "text": "Los datos primitivos almacenan directamente el valor, mientras los de referencia apuntan a un objeto en memoria.",
+              "explanation_correct": "Correcto, esa es la diferencia clave en Java.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Los datos de referencia son más rápidos que los primitivos.",
+              "explanation_correct": "",
+              "explanation_wrong": "En realidad, los primitivos suelen ser más rápidos."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q14",
+          "text": "¿Qué diferencia hay entre int e Integer?",
+          "options": [
+            {
+              "option": "a",
+              "text": "int es una clase, Integer es un tipo primitivo.",
+              "explanation_correct": "",
+              "explanation_wrong": "Es al revés. Revisa la diferencia entre clase y primitivo."
+            },
+            {
+              "option": "b",
+              "text": "int es un tipo primitivo y Integer es su versión clase (objeto).",
+              "explanation_correct": "Correcto, Integer es una clase envolvente de int.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Son lo mismo y se usan igual en todo contexto.",
+              "explanation_correct": "",
+              "explanation_wrong": "Tienen usos diferentes, sobre todo con colecciones."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q15",
+          "text": "¿Qué diferencia hay entre double y Double?",
+          "options": [
+            {
+              "option": "a",
+              "text": "double es más preciso que Double.",
+              "explanation_correct": "",
+              "explanation_wrong": "No se diferencian por precisión, sino por tipo."
+            },
+            {
+              "option": "b",
+              "text": "double es un tipo primitivo y Double es una clase envolvente.",
+              "explanation_correct": "Correcto, así puedes usar Double en listas, por ejemplo.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Double es más rápido para cálculos matemáticos.",
+              "explanation_correct": "",
+              "explanation_wrong": "Al contrario, double suele ser más rápido porque es primitivo."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
