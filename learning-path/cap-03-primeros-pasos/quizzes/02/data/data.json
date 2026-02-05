@@ -1,0 +1,663 @@
+{
+  "title": "Quiz 02 — Capítulo 3: Tipos de datos y colecciones (Parte 2)",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple con código Java",
+      "instructions": "Selecciona la respuesta correcta basándote en el código mostrado.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Qué hace este código?",
+          "image": "images/q1.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Imprime el número de días trabajados",
+              "explanation_correct": "",
+              "explanation_wrong": "Solo imprime el resultado de la operación, no el número de días."
+            },
+            {
+              "option": "b",
+              "text": "Calcula el total a pagar multiplicando días por pago diario",
+              "explanation_correct": "Multiplica dias * pago y lo imprime como total a pagar.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Imprime un mensaje de error",
+              "explanation_correct": "",
+              "explanation_wrong": "No hay error, el código se compila y funciona correctamente."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q2",
+          "text": "¿Qué imprime este programa?",
+          "image": "images/q2.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "1502.5",
+              "explanation_correct": "La operación 5 * 300.50 da 1502.5.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "305.50",
+              "explanation_correct": "",
+              "explanation_wrong": "305.50 no corresponde al cálculo."
+            },
+            {
+              "option": "c",
+              "text": "Error de compilación",
+              "explanation_correct": "",
+              "explanation_wrong": "El código sí compila, no hay errores."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q3",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q3.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Suma: 12",
+              "explanation_correct": "Se suman a + b = 12, y se imprime con texto.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Suma: 57",
+              "explanation_correct": "",
+              "explanation_wrong": "No se concatenan como texto, se suman numéricamente por los paréntesis."
+            },
+            {
+              "option": "c",
+              "text": "Error por uso de paréntesis",
+              "explanation_correct": "",
+              "explanation_wrong": "El uso de paréntesis es válido y correcto."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q4",
+          "text": "¿Qué tipo de dato es el usado aquí?",
+          "image": "images/q4.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "int",
+              "explanation_correct": "int es el tipo de dato utilizado.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "String",
+              "explanation_correct": "",
+              "explanation_wrong": "No se usan Strings."
+            },
+            {
+              "option": "c",
+              "text": "boolean",
+              "explanation_correct": "",
+              "explanation_wrong": "No hay booleanos en el código."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q5",
+          "text": "¿Qué hace este código?",
+          "image": "images/q5.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Convierte texto en número",
+              "explanation_correct": "",
+              "explanation_wrong": "El valor no se convierte de texto a número."
+            },
+            {
+              "option": "b",
+              "text": "Convierte un número a texto",
+              "explanation_correct": "Convierte el número a texto con String.valueOf().",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Multiplica la edad por 2",
+              "explanation_correct": "",
+              "explanation_wrong": "No hay ninguna multiplicación en el código."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q6",
+          "text": "¿Este código compila (funciona)?",
+          "image": "images/q6.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Sí, Java convierte automáticamente",
+              "explanation_correct": "",
+              "explanation_wrong": "Java no convierte int a String automáticamente."
+            },
+            {
+              "option": "b",
+              "text": "No, falta convertir el número a String",
+              "explanation_correct": "Falla porque falta conversión explícita a String.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Solo funciona si edad es estática",
+              "explanation_correct": "",
+              "explanation_wrong": "La variable edad no tiene que ser estática."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q7",
+          "text": "¿Cuál es el resultado?",
+          "image": "images/q7.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Total: 198.98",
+              "explanation_correct": "",
+              "explanation_wrong": "El resultado correcto es 199.98, no 198.98."
+            },
+            {
+              "option": "b",
+              "text": "Error al compilar",
+              "explanation_correct": "",
+              "explanation_wrong": "El código no tiene errores."
+            },
+            {
+              "option": "c",
+              "text": "Total: 199.98",
+              "explanation_correct": "El cálculo da 99.99 * 2 = 199.98.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c"
+        },
+        {
+          "id": "q8",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q8.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Josy",
+              "explanation_correct": "",
+              "explanation_wrong": "El valor 'Josy' está bajo la clave 'nombre', no 'edad'."
+            },
+            {
+              "option": "b",
+              "text": "14",
+              "explanation_correct": "Obtiene el valor de la clave 'edad', que es '14'.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Error de sintaxis",
+              "explanation_correct": "",
+              "explanation_wrong": "No hay errores de sintaxis."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q9",
+          "text": "¿Qué hace este código?",
+          "image": "images/q9.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Imprime si es tester (true o false)",
+              "explanation_correct": "El valor booleano se concatena sin problema.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Da error por concatenar boolean",
+              "explanation_correct": "",
+              "explanation_wrong": "Java permite concatenar booleanos."
+            },
+            {
+              "option": "c",
+              "text": "No imprime nada",
+              "explanation_correct": "",
+              "explanation_wrong": "El programa sí imprime."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q10",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q10.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Zoe",
+              "explanation_correct": "",
+              "explanation_wrong": "get(1) accede al segundo elemento, no al primero."
+            },
+            {
+              "option": "b",
+              "text": "Josy",
+              "explanation_correct": "El segundo elemento en la lista es 'Josy'.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "nombres[1]",
+              "explanation_correct": "",
+              "explanation_wrong": "La notación con corchetes no aplica en Java para listas."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q11",
+          "text": "¿Qué imprime este programa?",
+          "image": "images/q11.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "nombre",
+              "explanation_correct": "",
+              "explanation_wrong": "No se imprime la clave 'nombre'."
+            },
+            {
+              "option": "b",
+              "text": "13",
+              "explanation_correct": "",
+              "explanation_wrong": "El valor es '14', no '13'."
+            },
+            {
+              "option": "c",
+              "text": "14",
+              "explanation_correct": "get('edad') devuelve '14'.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c"
+        },
+        {
+          "id": "q12",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q12.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Zoe",
+              "explanation_correct": "Accede a personas.get(0).get('nombre') que da 'Zoe'.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "personas.get(\"nombre\")",
+              "explanation_correct": "",
+              "explanation_wrong": "personas.get('nombre') es inválido en List."
+            },
+            {
+              "option": "c",
+              "text": "null",
+              "explanation_correct": "",
+              "explanation_wrong": "Sí hay un valor, no es null."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q13",
+          "text": "¿Este código compila (funciona)?",
+          "image": "images/q13.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Sí, imprime null",
+              "explanation_correct": "",
+              "explanation_wrong": "No imprime null, da error de compilación."
+            },
+            {
+              "option": "b",
+              "text": "Sí, pero lanza excepción",
+              "explanation_correct": "",
+              "explanation_wrong": "La excepción ocurre porque .get(\"nombre\") no es válido en List."
+            },
+            {
+              "option": "c",
+              "text": "No, no compila porque .get(\"nombre\") no existe en List",
+              "explanation_correct": "Falla en compilación.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c"
+        },
+        {
+          "id": "q14",
+          "text": "¿Qué variable es de tipo estático?",
+          "image": "images/q14.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "escuela",
+              "explanation_correct": "escuela es la única variable con static.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "args",
+              "explanation_correct": "",
+              "explanation_wrong": "args no es static."
+            },
+            {
+              "option": "c",
+              "text": "println",
+              "explanation_correct": "",
+              "explanation_wrong": "println es un método, no una variable."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q15",
+          "text": "¿Qué tipo de variable es x?",
+          "image": "images/q15.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "De clase",
+              "explanation_correct": "",
+              "explanation_wrong": "No es variable de clase."
+            },
+            {
+              "option": "b",
+              "text": "Estática",
+              "explanation_correct": "",
+              "explanation_wrong": "No es static."
+            },
+            {
+              "option": "c",
+              "text": "De bloque",
+              "explanation_correct": "Se declara dentro del if, por lo tanto es de bloque.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c"
+        },
+        {
+          "id": "q16",
+          "text": "¿Este código compila (funciona)?",
+          "image": "images/q16.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Sí, x es visible fuera del if",
+              "explanation_correct": "",
+              "explanation_wrong": "La variable no es visible fuera del bloque."
+            },
+            {
+              "option": "b",
+              "text": "No, x es una variable de bloque",
+              "explanation_correct": "x solo existe dentro del if.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Solo lanza warning",
+              "explanation_correct": "",
+              "explanation_wrong": "No lanza warning, sino error."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q17",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q17.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "rojo",
+              "explanation_correct": "",
+              "explanation_wrong": "colores[0] sería 'rojo'."
+            },
+            {
+              "option": "b",
+              "text": "verde",
+              "explanation_correct": "colores[1] es 'verde'.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "azul",
+              "explanation_correct": "",
+              "explanation_wrong": "colores[2] sería 'azul'."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q18",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q18.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "18.0",
+              "explanation_correct": "",
+              "explanation_wrong": "La suma da 18, pero se divide entre 2."
+            },
+            {
+              "option": "b",
+              "text": "Promedio: 9.0",
+              "explanation_correct": "(10 + 8) / 2 = 9.0.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Promedio: 5.0",
+              "explanation_correct": "",
+              "explanation_wrong": "El resultado 5.0 es incorrecto."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q19",
+          "text": "¿Qué tipo de dato es esValido?",
+          "image": "images/q19.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "int",
+              "explanation_correct": "",
+              "explanation_wrong": "false es booleano, no int."
+            },
+            {
+              "option": "b",
+              "text": "boolean",
+              "explanation_correct": "esValido es boolean.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "String",
+              "explanation_correct": "",
+              "explanation_wrong": "No es texto."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q20",
+          "text": "¿Qué tipo de dato se declara aquí?",
+          "image": "images/q20.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "float",
+              "explanation_correct": "",
+              "explanation_wrong": "No se declara float, sino double."
+            },
+            {
+              "option": "b",
+              "text": "double",
+              "explanation_correct": "El tipo de dato usado es double.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Integer",
+              "explanation_correct": "",
+              "explanation_wrong": "No se usa Integer."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q21",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q21.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Hola",
+              "explanation_correct": "Imprime el valor de saludo.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "saludo",
+              "explanation_correct": "",
+              "explanation_wrong": "No imprime el nombre de la variable."
+            },
+            {
+              "option": "c",
+              "text": "null",
+              "explanation_correct": "",
+              "explanation_wrong": "saludo no es null."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q22",
+          "text": "¿Cuál es la diferencia entre int e Integer?",
+          "image": "images/q22.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Son lo mismo",
+              "explanation_correct": "",
+              "explanation_wrong": "int y Integer no son lo mismo."
+            },
+            {
+              "option": "b",
+              "text": "Integer es más rápido",
+              "explanation_correct": "",
+              "explanation_wrong": "Integer no es más rápido."
+            },
+            {
+              "option": "c",
+              "text": "int es primitivo, Integer es clase (permite null)",
+              "explanation_correct": "int es primitivo, Integer es clase envolvente.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c"
+        },
+        {
+          "id": "q23",
+          "text": "¿Este código compila (funciona)?",
+          "image": "images/q23.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "No, un int no puede ser null",
+              "explanation_correct": "int no puede ser null.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Sí, si se convierte a texto",
+              "explanation_correct": "",
+              "explanation_wrong": "No es un tema de conversión a texto."
+            },
+            {
+              "option": "c",
+              "text": "Solo falla en versiones nuevas de Java",
+              "explanation_correct": "",
+              "explanation_wrong": "Falla en todas las versiones."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q24",
+          "text": "¿Qué tipo de dato es precio?",
+          "image": "images/q24.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "double (primitivo)",
+              "explanation_correct": "",
+              "explanation_wrong": "Double con mayúscula es clase, no primitivo."
+            },
+            {
+              "option": "b",
+              "text": "int",
+              "explanation_correct": "",
+              "explanation_wrong": "El valor es decimal, no entero."
+            },
+            {
+              "option": "c",
+              "text": "Double (dato de referencia)",
+              "explanation_correct": "Double es un valor de referencia.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c"
+        },
+        {
+          "id": "q25",
+          "text": "¿Cuál es la forma correcta de convertir un número a texto?",
+          "image": "images/q25.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "String resultado = String.valueOf(edad);",
+              "explanation_correct": "String.valueOf(edad) convierte correctamente.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "String resultado = edad.toText();",
+              "explanation_correct": "",
+              "explanation_wrong": ".toText() no existe."
+            },
+            {
+              "option": "c",
+              "text": "String resultado = parse(edad);",
+              "explanation_correct": "",
+              "explanation_wrong": "parse() no es una función válida."
+            }
+          ],
+          "answer": "a"
+        }
+      ]
+    }
+  ]
+}
