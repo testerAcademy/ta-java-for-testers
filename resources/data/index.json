@@ -65,6 +65,11 @@
     {
       "title": "Capítulo 3 — Primeros pasos con Java",
       "pdf": "learning-path/cap-03-primeros-pasos/capitulo-03.pdf",
+      "quizzes": [
+        "learning-path/cap-03-primeros-pasos/quizzes/01/quiz.html",
+        "learning-path/cap-03-primeros-pasos/quizzes/02/quiz.html",
+        "learning-path/cap-03-primeros-pasos/quizzes/03/quiz.html"
+      ],
       "videos": [
         { "label": "Capitulo 3", "url": "https://youtu.be/RknbLl-oqEI" },
         { "label": "Crear proyecto Maven", "url": "https://youtu.be/XcAyS2arJiY" },
