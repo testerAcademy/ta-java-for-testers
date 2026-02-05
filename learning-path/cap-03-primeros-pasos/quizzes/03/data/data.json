@@ -1,0 +1,43 @@
+{
+  "title": "Ejercicios Prácticos — Capítulo 3: Primeros pasos con Java",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Ejercicios prácticos",
+      "instructions": "Resuelve cada ejercicio escribiendo el código necesario en tu IDE de programación. No hay opciones ni respuestas automáticas",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Ejercicio 1</strong><br><br>Declara las siguientes variables:<br><ul><li><strong>Nombre del curso</strong> (String)</li><li><strong>Número de alumnos inscritos</strong> (int)</li><li><strong>Precio del curso</strong> (double)</li></ul>Luego imprime en consola un mensaje con el siguiente formato:<br><br><strong>\"Curso: &lt;nombre&gt;, Alumnos: &lt;numero&gt;, Precio: &lt;precio&gt;\"</strong>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q2",
+          "text": "<strong>Ejercicio 2</strong><br><br>Una persona trabajó <strong>60 horas</strong> en el mes y gana <strong>50 USD por hora</strong>.<br><br>La persona paga un <strong>impuesto del 10%</strong>.<br><br>Realiza lo siguiente:<br><ul><li>Calcula el <strong>subtotal antes de impuestos</strong></li><li>Calcula el <strong>total neto después de impuestos</strong></li></ul>Imprime ambos valores en consola.",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q3",
+          "text": "<strong>Ejercicio 3</strong><br><br>Dado el siguiente código base:<br><br><pre>public class Main {\n  public static void main(String[] args) {\n    String producto = \"Kit productos premium de gato\";\n    String costoUnitario = \"$1,000.00\";\n    int cantidad = 2;\n  }\n}</pre><br>Calcula el <strong>total a pagar</strong> multiplicando el costo unitario por la cantidad, <strong>sin modificar la variable costoUnitario</strong>.<br><br>Imprime la salida con el siguiente formato:<br><br><strong>\"2 Kit productos premium de gato = $2000.0\"</strong><br><br><em>Tip:</em> Puedes crear variables auxiliares, realizar operaciones matemáticas, usar <strong>replace()</strong> para eliminar símbolos como <code>$</code> y <code>,</code> etc",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q4",
+          "text": "<strong>Ejercicio 4</strong><br><br>Crea un <strong>HashMap</strong> que represente a una persona con las siguientes claves:<br><ul><li>nombre</li><li>edad</li><li>rol</li></ul>Agrega ese HashMap a una <strong>List</strong>.<br><br>Desde la lista, imprime únicamente el valor del <strong>rol</strong>.",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q5",
+          "text": "<strong>Ejercicio 5</strong><br><br>Analiza el siguiente escenario:<br><ul><li>Declara una variable dentro de un bloque <strong>if</strong></li><li>Declara otra variable a nivel de <strong>clase</strong></li></ul>Luego intenta imprimir ambas variables <strong>fuera del bloque</strong>.<br><br><strong>Objetivo:</strong><br>Demuestra con código cuál variable es visible y cuál no.<br><br><em>No necesitas imprimir explicaciones en texto, solo demuestra el comportamiento con código.</em>",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}
