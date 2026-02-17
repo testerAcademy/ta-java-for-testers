@@ -91,7 +91,8 @@
     },
     {
       "title": "Capítulo 4 — Condicionales y Loops",
-      "pdf": "resources/html/under_construction.html"
+      "pdf": "learning-path/cap-04-cond-loops/capitulo-04.pdf",
+      "code": "https://github.com/testerAcademy/ta-java-for-testers/tree/main/codigo/TA_javaForTesters/src/test/java/cap04"
     },
     {
       "title": "Capítulo 5 — Métodos y alcance",
