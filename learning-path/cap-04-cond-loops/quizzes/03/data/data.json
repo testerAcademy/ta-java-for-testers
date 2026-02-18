@@ -1,0 +1,61 @@
+{
+  "title": "Quiz 04 — Sentencias IF",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Ejercicios prácticos - IF",
+      "instructions": "Resuelve cada ejercicio escribiendo el código necesario en tu IDE de programación. Después de resolverlo, cambia el valor de las variables y vuelve a ejecutar para validar distintos escenarios.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Ejercicio 1 (IF simple)</strong><br><br>Declara una variable <strong>edad</strong> con valor 20.<br><br>Si la edad es mayor o igual a 18, imprime:<br><br><strong>\"Acceso permitido\"</strong><br><br><em>Ahora cambia el valor de edad (por ejemplo a 16) y vuelve a ejecutar para observar qué sucede.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q2",
+          "text": "<strong>Ejercicio 2 (IF simple)</strong><br><br>Declara una variable <strong>temperatura</strong> con valor 35.<br><br>Si la temperatura es mayor a 30, imprime:<br><br><strong>\"Hace mucho calor\"</strong><br><br><em>Cambia la temperatura a un valor menor (por ejemplo 20) y ejecuta nuevamente.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q3",
+          "text": "<strong>Ejercicio 3 (IF anidado)</strong><br><br>Declara una variable <strong>usuario</strong> = \"admin\" y una variable <strong>password</strong> = \"1234\".<br><br>Realiza lo siguiente:<br><ul><li>Si el usuario es \"admin\"</li><li>Dentro de ese bloque, valida si el password es \"1234\"</li></ul>Si ambas condiciones se cumplen, imprime:<br><br><strong>\"Login correcto\"</strong><br><br><em>Cambia el usuario o el password y ejecuta nuevamente para probar otros escenarios.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q4",
+          "text": "<strong>Ejercicio 4 (IF anidado)</strong><br><br>Declara una variable <strong>edad</strong> = 25 y <strong>tieneINE</strong> = true.<br><br>Valida lo siguiente:<br><ul><li>Si la edad es mayor o igual a 18</li><li>Dentro de ese bloque, verifica si tiene INE</li></ul>Si ambas condiciones se cumplen, imprime:<br><br><strong>\"Puede votar\"</strong><br><br><em>Prueba cambiando la edad o el valor de tieneINE para validar distintos casos.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q5",
+          "text": "<strong>Ejercicio 5 (IF - ELSE IF - ELSE)</strong><br><br>Declara una variable <strong>calificacion</strong> = 85.<br><br>Evalúa lo siguiente:<br><ul><li>Si es mayor o igual a 90 → imprime \"Excelente\"</li><li>Si es mayor o igual a 70 → imprime \"Aprobado\"</li><li>En cualquier otro caso → imprime \"Reprobado\"</li></ul><br><em>Cambia la calificación a valores como 95, 70 y 50 para validar todos los caminos.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q6",
+          "text": "<strong>Ejercicio 6 (IF - ELSE IF - ELSE)</strong><br><br>Declara una variable <strong>hora</strong> = 14.<br><br>Evalúa:<br><ul><li>Si es menor a 12 → \"Buenos días\"</li><li>Si es menor a 18 → \"Buenas tardes\"</li><li>En otro caso → \"Buenas noches\"</li></ul><br><em>Prueba con diferentes horas (8, 15, 21) para validar cada condición.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q7",
+          "text": "<strong>Ejercicio 7 (Operador Ternario)</strong><br><br>Declara una variable <strong>numero</strong> = 10.<br><br>Usando operador ternario, valida si el número es par o impar.<br><br>Guarda el resultado en una variable <strong>resultado</strong> e imprímela.<br><br><em>Cambia el número a diferentes valores para validar ambos resultados.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q8",
+          "text": "<strong>Ejercicio 8 (Operador Ternario)</strong><br><br>Declara una variable <strong>saldo</strong> = 500.<br><br>Usa operador ternario para validar:<br><ul><li>Si el saldo es mayor o igual a 1000 → \"Saldo suficiente\"</li><li>En caso contrario → \"Saldo insuficiente\"</li></ul><br><em>Modifica el saldo a diferentes cantidades para probar ambos escenarios.</em>",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}
