@@ -1,0 +1,61 @@
+{
+  "title": "Quiz 04 — Sentencia FOR",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Ejercicios prácticos - FOR y FOR Enhanced",
+      "instructions": "Resuelve cada ejercicio escribiendo el código necesario en tu IDE. Después de resolverlo, cambia los valores y vuelve a ejecutar para validar distintos escenarios.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Ejercicio 1 (FOR básico)</strong><br><br>Usa un ciclo <strong>for</strong> para imprimir los números del 1 al 5.<br><br><em>Ahora cambia el rango para imprimir del 1 al 10 y vuelve a ejecutar.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q2",
+          "text": "<strong>Ejercicio 2 (FOR básico)</strong><br><br>Declara una variable <strong>limite</strong> = 3.<br><br>Usa un ciclo <strong>for</strong> para imprimir \"QA\" la cantidad de veces que indique la variable limite.<br><br><em>Cambia el valor de limite y ejecuta nuevamente.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q3",
+          "text": "<strong>Ejercicio 3 (FOR con acumulador)</strong><br><br>Usa un ciclo <strong>for</strong> para recorrer los números del 1 al 4.<br><br>Dentro del ciclo, suma los valores en una variable llamada <strong>total</strong>.<br><br>Al final imprime el valor total.<br><br><em>Cambia el rango y valida cómo cambia el resultado.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q4",
+          "text": "<strong>Ejercicio 4 (FOR con condición interna)</strong><br><br>Usa un ciclo <strong>for</strong> del 1 al 6.<br><br>Dentro del ciclo, imprime únicamente los números que sean mayores a 3 usando una condición <strong>if</strong>.<br><br><em>Modifica el rango y observa el comportamiento.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q5",
+          "text": "<strong>Ejercicio 5 (FOR Enhanced - Lista)</strong><br><br>Crea una lista con los nombres: \"Ana\", \"Luis\", \"Carlos\".<br><br>Usa un <strong>for enhanced</strong> para imprimir cada nombre en consola.<br><br><em>Agrega más nombres a la lista y vuelve a ejecutar.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q6",
+          "text": "<strong>Ejercicio 6 (FOR Enhanced con condición)</strong><br><br>Crea una lista de números: 5, 8, 12, 3.<br><br>Usa un <strong>for enhanced</strong> e imprime únicamente los números mayores a 6 utilizando una condición <strong>if</strong> dentro del ciclo.<br><br><em>Cambia los valores de la lista y valida los resultados.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q7",
+          "text": "<strong>Ejercicio 7 (FOR con arreglo)</strong><br><br>Declara un arreglo de tipo int con los valores: 2, 4, 6, 8.<br><br>Usa un ciclo <strong>for tradicional</strong> para recorrer el arreglo usando su tamaño (length) e imprime cada valor.<br><br><em>Agrega un nuevo número al arreglo y ejecuta nuevamente.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q8",
+          "text": "<strong>Ejercicio 8 (Comparación FOR vs FOR Enhanced)</strong><br><br>Crea una lista con los valores: \"QA\", \"DEV\", \"PO\".<br><br>Primero recórrela con un <strong>for tradicional</strong> usando size().<br>Después recórrela con un <strong>for enhanced</strong>.<br><br><em>Observa la diferencia en la forma de escribir ambos ciclos.</em>",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}
