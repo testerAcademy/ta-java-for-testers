@@ -1,0 +1,21 @@
+{
+  "title": "Quiz 7 — Desafio Capítulo 4",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Mini Proyecto - Sistema con ingreso de datos",
+      "instructions": "Desarrolla el siguiente mini proyecto dentro del método main. Usa variables, if, if anidado, for, break, continue y Scanner. No uses métodos adicionales ni clases extra.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Proyecto Final: Registro y Clasificación de Perfil</strong><br><br>Vas a crear un pequeño sistema en consola que capture datos reales usando <strong>Scanner</strong>.<br><br><strong>Reglas:</strong><br><ul><li>Debes capturar nombre (String)</li><li>Debes capturar edad (int)</li><li>Debes capturar salario (double)</li></ul><br><br><strong>Validación de edad:</strong><br><ul><li>Permite máximo 3 intentos usando un ciclo</li><li>Si la edad es menor o igual a 0 → mostrar \"Edad inválida\"</li><li>Si la edad es mayor a 120 → mostrar \"Edad fuera de rango\"</li><li>Si la edad es válida → salir del ciclo</li></ul><br><br><strong>Clasificación:</strong><br><ul><li>Si edad ≥ 18:</li><ul><li>Si salario > 10000 → \"Perfil Premium\"</li><li>Si no → \"Perfil Regular\"</li></ul><li>Si edad < 18 → \"Menor de edad\"</li></ul><br><br>Imprime al final:<br><br><strong>\"Nombre: ___ | Edad: ___ | Perfil: ___\"</strong><br><br><strong>Ejemplo mínimo para iniciar con Scanner:</strong><br><pre>import java.util.Scanner;\n\npublic class Main {\n  public static void main(String[] args) {\n\n    Scanner sc = new Scanner(System.in);\n\n    System.out.println(\"Ingresa tu nombre:\");\n    String nombre = sc.nextLine();\n\n    // Aquí debes continuar tu lógica\n\n    sc.close();\n  }\n}</pre><br><br><em>Importante:</em><br><ul><li>nextLine() captura texto</li><li>nextInt() captura enteros</li><li>nextDouble() captura decimales</li></ul><br><br>Prueba distintos escenarios para validar todos los caminos posibles.",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}
+
+

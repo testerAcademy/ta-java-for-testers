@@ -1,0 +1,61 @@
+{
+  "title": "Quiz 6 — Ejercicios de código BREAK y CONTINUE",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Ejercicios prácticos - BREAK y CONTINUE",
+      "instructions": "Resuelve cada ejercicio escribiendo el código en tu IDE. Después de resolverlo, cambia valores y vuelve a ejecutar para analizar el comportamiento del flujo.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Ejercicio 1 (FOR + BREAK)</strong><br><br>Usa un ciclo <strong>for</strong> del 1 al 10.<br><br>Imprime cada número.<br><br>Cuando el número sea 5, usa <strong>break</strong> para salir del ciclo.<br><br><em>Cambia el valor donde se ejecuta el break y observa qué sucede.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q2",
+          "text": "<strong>Ejercicio 2 (FOR + CONTINUE)</strong><br><br>Usa un ciclo <strong>for</strong> del 1 al 8.<br><br>Dentro del ciclo, usa <strong>continue</strong> para que no se imprima el número 4.<br><br><em>Prueba ignorando otro número y valida el resultado.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q3",
+          "text": "<strong>Ejercicio 3 (WHILE + BREAK)</strong><br><br>Declara una variable <strong>contador</strong> = 1.<br><br>Usa un ciclo <strong>while</strong> mientras contador sea menor o igual a 10.<br><br>Imprime el contador.<br><br>Si el contador es igual a 6, usa <strong>break</strong>.<br><br><em>Cambia el número de corte y analiza el flujo.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q4",
+          "text": "<strong>Ejercicio 4 (WHILE + CONTINUE)</strong><br><br>Declara una variable <strong>numero</strong> = 0.<br><br>Usa un ciclo <strong>while</strong> mientras numero sea menor a 7.<br><br>Incrementa numero dentro del ciclo.<br><br>Si numero es igual a 3, usa <strong>continue</strong> para que no se imprima ese valor.<br><br><em>Modifica el valor que se omite.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q5",
+          "text": "<strong>Ejercicio 5 (FOR + IF + BREAK)</strong><br><br>Recorre del 1 al 10 usando <strong>for</strong>.<br><br>Si el número es mayor a 7, imprime \"Límite alcanzado\" y usa <strong>break</strong>.<br><br><em>Cambia el límite y valida cuándo termina el ciclo.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q6",
+          "text": "<strong>Ejercicio 6 (FOR + IF + CONTINUE)</strong><br><br>Usa un ciclo <strong>for</strong> del 1 al 10.<br><br>Si el número es par, usa <strong>continue</strong>.<br><br>Imprime únicamente los números impares.<br><br><em>Cambia la condición para imprimir solo pares.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q7",
+          "text": "<strong>Ejercicio 7 (FOR + Lista + BREAK)</strong><br><br>Crea una lista con los nombres: \"Ana\", \"Luis\", \"Carlos\", \"Maria\".<br><br>Recórrela con un <strong>for enhanced</strong>.<br><br>Si el nombre es \"Carlos\", usa <strong>break</strong> para detener el ciclo.<br><br><em>Cambia el nombre que detiene la ejecución.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q8",
+          "text": "<strong>Ejercicio 8 (FOR + Lista + CONTINUE)</strong><br><br>Crea una lista con números: 3, 6, 9, 12, 15.<br><br>Recórrela con un <strong>for enhanced</strong>.<br><br>Si el número es 9, usa <strong>continue</strong> para omitirlo.<br><br>Imprime los demás valores.<br><br><em>Modifica el número que se omite y observa el comportamiento.</em>",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}

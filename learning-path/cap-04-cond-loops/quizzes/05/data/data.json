@@ -1,0 +1,43 @@
+{
+  "title": "Quiz 05 — Sentencia WHILE",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Ejercicios prácticos - WHILE",
+      "instructions": "Resuelve cada ejercicio escribiendo el código necesario en tu IDE. Después de resolverlo, cambia los valores y vuelve a ejecutar para validar distintos escenarios.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Ejercicio 1 (WHILE básico)</strong><br><br>Declara una variable <strong>contador</strong> = 1.<br><br>Usa un ciclo <strong>while</strong> para imprimir los números del 1 al 5.<br><br><em>Después cambia el valor inicial del contador y observa qué sucede.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q2",
+          "text": "<strong>Ejercicio 2 (WHILE con acumulador)</strong><br><br>Declara una variable <strong>numero</strong> = 1 y una variable <strong>suma</strong> = 0.<br><br>Usa un ciclo <strong>while</strong> para sumar los números del 1 al 4.<br><br>Al final imprime el valor de suma.<br><br><em>Cambia el límite y valida cómo cambia el resultado.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q3",
+          "text": "<strong>Ejercicio 3 (WHILE con IF)</strong><br><br>Declara una variable <strong>contador</strong> = 1.<br><br>Usa un ciclo <strong>while</strong> hasta que el contador sea menor o igual a 6.<br><br>Dentro del ciclo, usa un <strong>if</strong> para imprimir únicamente los números mayores a 3.<br><br><em>Modifica el límite y vuelve a ejecutar.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q4",
+          "text": "<strong>Ejercicio 4 (WHILE con IF - ELSE)</strong><br><br>Declara una variable <strong>numero</strong> = 1.<br><br>Usa un ciclo <strong>while</strong> hasta que numero sea menor o igual a 5.<br><br>Dentro del ciclo:<br><ul><li>Si el número es par, imprime \"Par\"</li><li>Si no, imprime \"Impar\"</li></ul><br><em>Cambia el valor inicial y observa el comportamiento.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q5",
+          "text": "<strong>Ejercicio 5 (WHILE con bandera booleana)</strong><br><br>Declara una variable <strong>intentos</strong> = 1.<br><br>Usa un ciclo <strong>while</strong> mientras intentos sea menor o igual a 3.<br><br>Imprime:<br><br><strong>\"Intento número: \" + intentos</strong><br><br>Incrementa la variable dentro del ciclo.<br><br><em>Cambia el número máximo de intentos y valida el resultado.</em>",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}
