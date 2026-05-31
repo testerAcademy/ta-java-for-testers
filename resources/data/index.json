@@ -91,8 +91,9 @@
     },
     {
       "title": "Capítulo 4 — Condicionales y Loops",
-      "pdf": "resources/html/under_construction.html",
+      "pdf": "learning-path/cap-04-cond-loops/capitulo-04.pdf",
       "quizzes": [
+        "learning-path/cap-04-cond-loops/quizzes/01/quiz.html",
         "learning-path/cap-04-cond-loops/quizzes/03/quiz.html",
         "learning-path/cap-04-cond-loops/quizzes/04/quiz.html",
         "learning-path/cap-04-cond-loops/quizzes/05/quiz.html",

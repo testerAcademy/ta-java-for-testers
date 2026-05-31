@@ -1,0 +1,273 @@
+{
+  "title": "Quiz 02 — Capítulo 4: Código con IF, FOR, WHILE, BREAK y CONTINUE",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple con código Java",
+      "instructions": "Selecciona la respuesta correcta basándote en el código mostrado.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q1.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Acceso permitido",
+              "explanation_correct": "Correcto, la variable esAdmin vale true y el IF se cumple.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Acceso denegado",
+              "explanation_correct": "",
+              "explanation_wrong": "Ese texto no existe en el código."
+            },
+            {
+              "option": "c",
+              "text": "No imprime nada",
+              "explanation_correct": "",
+              "explanation_wrong": "Sí imprime porque la condición es verdadera."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q2",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q2.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "No es mayor de edad",
+              "explanation_correct": "",
+              "explanation_wrong": "La edad es 17, pero el IF valida edad >= 18."
+            },
+            {
+              "option": "b",
+              "text": "Es mayor de edad",
+              "explanation_correct": "",
+              "explanation_wrong": "17 no cumple la condición edad >= 18."
+            },
+            {
+              "option": "c",
+              "text": "No es mayor de edad",
+              "explanation_correct": "Correcto, como 17 no es mayor o igual a 18, se ejecuta el ELSE.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c"
+        },
+        {
+          "id": "q3",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q3.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Acceso permitido",
+              "explanation_correct": "",
+              "explanation_wrong": "No se cumple la segunda condición."
+            },
+            {
+              "option": "b",
+              "text": "No imprime nada",
+              "explanation_correct": "Correcto, esAdmin es true, pero edad es menor a 18.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Error de compilación",
+              "explanation_correct": "",
+              "explanation_wrong": "El código sí compila."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q4",
+          "text": "¿Qué valor queda guardado en la variable acceso?",
+          "image": "images/q4.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Permitido",
+              "explanation_correct": "",
+              "explanation_wrong": "esAdmin vale false, por eso no toma el valor después del signo ?."
+            },
+            {
+              "option": "b",
+              "text": "Denegado",
+              "explanation_correct": "Correcto, el operador ternario toma el valor después de ':' cuando la condición es falsa.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "true",
+              "explanation_correct": "",
+              "explanation_wrong": "La variable acceso es String, no boolean."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q5",
+          "text": "¿Qué imprime este FOR?",
+          "image": "images/q5.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "1 2 3",
+              "explanation_correct": "Correcto, el ciclo inicia en 1 y termina cuando i es igual a 3.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "0 1 2 3",
+              "explanation_correct": "",
+              "explanation_wrong": "El ciclo no inicia en 0."
+            },
+            {
+              "option": "c",
+              "text": "1 2",
+              "explanation_correct": "",
+              "explanation_wrong": "La condición permite imprimir hasta 3."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q6",
+          "text": "¿Qué imprime este Enhanced FOR?",
+          "image": "images/q6.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "0 1 2",
+              "explanation_correct": "",
+              "explanation_wrong": "Enhanced FOR recorre valores, no índices."
+            },
+            {
+              "option": "b",
+              "text": "Login Pago Reporte",
+              "explanation_correct": "Correcto, recorre directamente los valores del array.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "features",
+              "explanation_correct": "",
+              "explanation_wrong": "No imprime el nombre de la variable."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q7",
+          "text": "¿Qué imprime este WHILE?",
+          "image": "images/q7.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "1 2 3",
+              "explanation_correct": "Correcto, el ciclo se ejecuta mientras i sea menor o igual a 3.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "1 2 3 4",
+              "explanation_correct": "",
+              "explanation_wrong": "Cuando i vale 4, la condición ya no se cumple."
+            },
+            {
+              "option": "c",
+              "text": "No imprime nada",
+              "explanation_correct": "",
+              "explanation_wrong": "La condición inicia verdadera."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q8",
+          "text": "¿Qué imprime este código con BREAK?",
+          "image": "images/q8.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "1 2",
+              "explanation_correct": "Correcto, cuando i vale 3, BREAK rompe el ciclo antes de imprimir.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "1 2 3 4 5",
+              "explanation_correct": "",
+              "explanation_wrong": "El ciclo se rompe cuando i vale 3."
+            },
+            {
+              "option": "c",
+              "text": "3 4 5",
+              "explanation_correct": "",
+              "explanation_wrong": "El código imprime antes de llegar al break."
+            }
+          ],
+          "answer": "a"
+        },
+        {
+          "id": "q9",
+          "text": "¿Qué imprime este código con CONTINUE?",
+          "image": "images/q9.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "1 2 3 4 5",
+              "explanation_correct": "",
+              "explanation_wrong": "Cuando i vale 3, CONTINUE salta esa iteración."
+            },
+            {
+              "option": "b",
+              "text": "1 2 4 5",
+              "explanation_correct": "Correcto, el número 3 se omite por el CONTINUE.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "1 2",
+              "explanation_correct": "",
+              "explanation_wrong": "CONTINUE no rompe el ciclo, solo salta una iteración."
+            }
+          ],
+          "answer": "b"
+        },
+        {
+          "id": "q10",
+          "text": "¿Qué imprime este código?",
+          "image": "images/q10.png",
+          "options": [
+            {
+              "option": "a",
+              "text": "Prueba encontrada",
+              "explanation_correct": "Correcto, el FOR encuentra el valor Pago, imprime el mensaje y después rompe el ciclo.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Login Pago Reporte",
+              "explanation_correct": "",
+              "explanation_wrong": "El código no imprime todos los elementos."
+            },
+            {
+              "option": "c",
+              "text": "No imprime nada",
+              "explanation_correct": "",
+              "explanation_wrong": "Sí imprime porque encuentra Pago."
+            }
+          ],
+          "answer": "a"
+        }
+      ]
+    }
+  ]
+}

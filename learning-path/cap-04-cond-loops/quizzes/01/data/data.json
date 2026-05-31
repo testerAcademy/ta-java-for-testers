@@ -1,0 +1,273 @@
+{
+  "title": "Quiz 01 — Capítulo 4: Condicionales y Loops",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple",
+      "instructions": "Selecciona la respuesta correcta en cada pregunta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Cuál es el propósito principal de una estructura IF?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Repetir código varias veces.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso corresponde a los loops."
+            },
+            {
+              "option": "b",
+              "text": "Tomar decisiones según una condición.",
+              "explanation_correct": "Correcto, IF permite ejecutar código solo cuando una condición se cumple.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Crear objetos en memoria.",
+              "explanation_correct": "",
+              "explanation_wrong": "IF no se utiliza para crear objetos."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "¿Qué ocurre cuando la condición de un IF es falsa y existe un ELSE?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Se ejecuta el bloque ELSE.",
+              "explanation_correct": "Correcto, ELSE se ejecuta cuando la condición del IF no se cumple.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Se ejecutan ambos bloques.",
+              "explanation_correct": "",
+              "explanation_wrong": "Solo se ejecuta uno de los bloques."
+            },
+            {
+              "option": "c",
+              "text": "El programa termina.",
+              "explanation_correct": "",
+              "explanation_wrong": "El programa continúa normalmente."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q3",
+          "text": "¿Qué es un IF anidado?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Un IF dentro de otro IF.",
+              "explanation_correct": "Correcto, permite validar múltiples condiciones relacionadas.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Un FOR dentro de un WHILE.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso son loops anidados."
+            },
+            {
+              "option": "c",
+              "text": "Un ELSE sin IF.",
+              "explanation_correct": "",
+              "explanation_wrong": "ELSE siempre depende de un IF."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q4",
+          "text": "¿Cuál es la principal ventaja del operador ternario?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Permite crear ciclos infinitos.",
+              "explanation_correct": "",
+              "explanation_wrong": "No tiene relación con ciclos."
+            },
+            {
+              "option": "b",
+              "text": "Es una forma corta de escribir un IF/ELSE.",
+              "explanation_correct": "Correcto, permite tomar decisiones simples en una sola línea.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Reemplaza cualquier estructura FOR.",
+              "explanation_correct": "",
+              "explanation_wrong": "No sustituye loops."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q5",
+          "text": "¿Qué característica distingue a un FOR de un WHILE?",
+          "options": [
+            {
+              "option": "a",
+              "text": "FOR se usa cuando normalmente conocemos la cantidad de iteraciones.",
+              "explanation_correct": "Correcto, FOR suele utilizarse cuando el número de repeticiones está definido.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "FOR nunca utiliza condiciones.",
+              "explanation_correct": "",
+              "explanation_wrong": "FOR sí utiliza condiciones."
+            },
+            {
+              "option": "c",
+              "text": "FOR no puede recorrer listas.",
+              "explanation_correct": "",
+              "explanation_wrong": "FOR es muy utilizado para recorrer listas y arrays."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q6",
+          "text": "¿Cuándo conviene utilizar Enhanced FOR (For-Each)?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Cuando solo necesitamos recorrer y leer elementos de una lista o array.",
+              "explanation_correct": "Correcto, es más limpio cuando no necesitas manejar índices.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Cuando se requiere acceso constante al índice.",
+              "explanation_correct": "",
+              "explanation_wrong": "Para eso suele ser mejor el FOR clásico."
+            },
+            {
+              "option": "c",
+              "text": "Cuando se quiere crear un ciclo infinito.",
+              "explanation_correct": "",
+              "explanation_wrong": "No es el objetivo del Enhanced FOR."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q7",
+          "text": "¿Qué caracteriza a un ciclo WHILE?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Siempre se ejecuta exactamente 10 veces.",
+              "explanation_correct": "",
+              "explanation_wrong": "WHILE depende de una condición."
+            },
+            {
+              "option": "b",
+              "text": "Se ejecuta mientras una condición sea verdadera.",
+              "explanation_correct": "Correcto, continúa ejecutándose hasta que la condición cambie.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Solo puede trabajar con números.",
+              "explanation_correct": "",
+              "explanation_wrong": "Puede utilizar cualquier condición booleana."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q8",
+          "text": "¿Qué hace la instrucción BREAK dentro de un ciclo?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Salta únicamente la iteración actual.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso corresponde a CONTINUE."
+            },
+            {
+              "option": "b",
+              "text": "Reinicia el ciclo desde el inicio.",
+              "explanation_correct": "",
+              "explanation_wrong": "BREAK no reinicia ciclos."
+            },
+            {
+              "option": "c",
+              "text": "Finaliza inmediatamente el ciclo.",
+              "explanation_correct": "Correcto, rompe la ejecución del loop aunque la condición siga siendo verdadera.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q9",
+          "text": "¿Qué hace la instrucción CONTINUE dentro de un ciclo?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Finaliza completamente el ciclo.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso sería BREAK."
+            },
+            {
+              "option": "b",
+              "text": "Omite la iteración actual y continúa con la siguiente.",
+              "explanation_correct": "Correcto, salta la vuelta actual del ciclo.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Detiene el programa.",
+              "explanation_correct": "",
+              "explanation_wrong": "CONTINUE no detiene la ejecución."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q10",
+          "text": "Como tester, ¿cuál es un uso común de los loops?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Recorrer datos de prueba y ejecutar validaciones repetitivas.",
+              "explanation_correct": "Correcto, es uno de los usos más frecuentes en automatización de pruebas.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Instalar herramientas automáticamente.",
+              "explanation_correct": "",
+              "explanation_wrong": "No es el objetivo principal de los loops."
+            },
+            {
+              "option": "c",
+              "text": "Compilar código Java.",
+              "explanation_correct": "",
+              "explanation_wrong": "La compilación no depende de los loops."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
