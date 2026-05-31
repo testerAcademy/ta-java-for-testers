@@ -91,7 +91,33 @@
     },
     {
       "title": "Capítulo 4 — Condicionales y Loops",
-      "pdf": "resources/html/under_construction.html"
+      "pdf": "resources/html/under_construction.html",
+      "quizzes": [
+        "learning-path/cap-04-cond-loops/quizzes/03/quiz.html",
+        "learning-path/cap-04-cond-loops/quizzes/04/quiz.html",
+        "learning-path/cap-04-cond-loops/quizzes/05/quiz.html",
+        "learning-path/cap-04-cond-loops/quizzes/06/quiz.html",
+        "learning-path/cap-04-cond-loops/quizzes/07/quiz.html"
+      ],
+      "videos": [
+        { "label": "Capítulo 4", "url": "https://youtu.be/kdSf9_xwL1k" },
+        { "label": "Condicionales", "url": "https://youtu.be/7kBF8Aajq0Y" },
+        { "label": "Bloque IF", "url": "https://youtu.be/_MQR4HwLLU8" },
+        { "label": "Bloque IF/ELSE", "url": "https://youtu.be/NZtZH8KovzI" },
+        { "label": "Bloque IF Anidados", "url": "https://youtu.be/YUeHT-MumKM" },
+        { "label": "Operador Ternario", "url": "https://youtu.be/2ep3-PjpLpY" },
+        { "label": "Actividades Condicionales", "url": "https://youtu.be/hMJgERT9FXI" },
+        { "label": "Iteraciones", "url": "https://youtu.be/FW8Shg04vmY" },
+        { "label": "For Clásico", "url": "https://youtu.be/6flgO5sVQSA" },
+        { "label": "Enhanced For (For each)", "url": "https://youtu.be/rxwyq_wrg-s" },
+        { "label": "Actividades For", "url": "https://youtu.be/7Y9EzePewK4" },
+        { "label": "Ciclo While", "url": "https://youtu.be/snqtCNil8a4" },
+        { "label": "Actividades While", "url": "https://youtu.be/KyPr4ZmlyH4" },
+        { "label": "Break", "url": "https://youtu.be/aNOKzLkFqAo" },
+        { "label": "Continue", "url": "https://youtu.be/kLNi8YdROhg" },
+        { "label": "Actividades Break & Continue", "url": "https://youtu.be/H2DyG9KVFj8" },
+        { "label": "Quizzes y Actividades", "url": "resources/html/under_construction.html" }
+]
     },
     {
       "title": "Capítulo 5 — Métodos y alcance",
