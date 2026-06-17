@@ -94,6 +94,7 @@
       "pdf": "learning-path/cap-04-cond-loops/capitulo-04.pdf",
       "quizzes": [
         "learning-path/cap-04-cond-loops/quizzes/01/quiz.html",
+        "learning-path/cap-04-cond-loops/quizzes/02/quiz.html",
         "learning-path/cap-04-cond-loops/quizzes/03/quiz.html",
         "learning-path/cap-04-cond-loops/quizzes/04/quiz.html",
         "learning-path/cap-04-cond-loops/quizzes/05/quiz.html",
@@ -117,7 +118,7 @@
         { "label": "Break", "url": "https://youtu.be/aNOKzLkFqAo" },
         { "label": "Continue", "url": "https://youtu.be/kLNi8YdROhg" },
         { "label": "Actividades Break & Continue", "url": "https://youtu.be/H2DyG9KVFj8" },
-        { "label": "Quizzes y Actividades", "url": "resources/html/under_construction.html" }
+        { "label": "Quizzes y Actividades", "url": "https://youtu.be/tgw4A364JLQ" }
 ]
     },
     {
