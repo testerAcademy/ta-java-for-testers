@@ -1,0 +1,273 @@
+{
+  "title": "Quiz 01 — Capítulo 5: Métodos y alcance",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple",
+      "instructions": "Selecciona la respuesta correcta en cada pregunta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Qué es un método en Java?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Un bloque de código que realiza una tarea específica.",
+              "explanation_correct": "Correcto, un método agrupa código para ejecutar una tarea.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Una variable que guarda muchos datos.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso se acerca más a una colección o estructura de datos."
+            },
+            {
+              "option": "c",
+              "text": "Una condición que decide entre dos caminos.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso corresponde a una condicional."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "¿Para qué le sirve a un tester conocer métodos?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Para reutilizar acciones comunes como login, click o screenshots.",
+              "explanation_correct": "Correcto, los métodos ayudan a reutilizar acciones y reducir código duplicado.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Para evitar escribir pruebas.",
+              "explanation_correct": "",
+              "explanation_wrong": "Conocer métodos ayuda a escribir mejores pruebas, no a evitarlas."
+            },
+            {
+              "option": "c",
+              "text": "Para eliminar la necesidad de frameworks.",
+              "explanation_correct": "",
+              "explanation_wrong": "Los frameworks usan muchos métodos, no los reemplazan."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q3",
+          "text": "¿Qué significa que un método sea void?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Que regresa un valor numérico.",
+              "explanation_correct": "",
+              "explanation_wrong": "void significa que no regresa ningún valor."
+            },
+            {
+              "option": "b",
+              "text": "Que no regresa ningún valor.",
+              "explanation_correct": "Correcto, void ejecuta una acción y termina.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Que solo puede usarse con variables String.",
+              "explanation_correct": "",
+              "explanation_wrong": "void no depende del tipo String."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q4",
+          "text": "¿Qué palabra se usa para regresar un valor desde un método?",
+          "options": [
+            {
+              "option": "a",
+              "text": "return",
+              "explanation_correct": "Correcto, return entrega un resultado al terminar el método.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "void",
+              "explanation_correct": "",
+              "explanation_wrong": "void indica que no regresa valor."
+            },
+            {
+              "option": "c",
+              "text": "static",
+              "explanation_correct": "",
+              "explanation_wrong": "static no se usa para regresar valores."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q5",
+          "text": "¿Dónde se define el tipo de dato que regresa un método?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Después del nombre del método.",
+              "explanation_correct": "",
+              "explanation_wrong": "El tipo de retorno va antes del nombre del método."
+            },
+            {
+              "option": "b",
+              "text": "Antes del nombre del método.",
+              "explanation_correct": "Correcto, por ejemplo: public static int sumar().",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Dentro de los paréntesis del método.",
+              "explanation_correct": "",
+              "explanation_wrong": "Los paréntesis se usan para parámetros."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q6",
+          "text": "¿Qué son los modificadores de acceso?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Palabras clave que definen desde dónde se puede acceder a un método.",
+              "explanation_correct": "Correcto, controlan la visibilidad del código.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Métodos especiales para repetir código.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso corresponde a loops o ciclos."
+            },
+            {
+              "option": "c",
+              "text": "Variables que guardan contraseñas.",
+              "explanation_correct": "",
+              "explanation_wrong": "No son variables, son palabras clave de acceso."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q7",
+          "text": "¿Qué modificador es el más restrictivo?",
+          "options": [
+            {
+              "option": "a",
+              "text": "public",
+              "explanation_correct": "",
+              "explanation_wrong": "public es el más abierto."
+            },
+            {
+              "option": "b",
+              "text": "protected",
+              "explanation_correct": "",
+              "explanation_wrong": "protected es intermedio."
+            },
+            {
+              "option": "c",
+              "text": "private",
+              "explanation_correct": "Correcto, private solo permite acceso dentro de la misma clase.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q8",
+          "text": "¿Qué significa que un método sea public?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Que puede ser usado desde cualquier clase y package.",
+              "explanation_correct": "Correcto, public es el modificador más abierto.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Que solo puede usarse dentro de la misma clase.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso corresponde a private."
+            },
+            {
+              "option": "c",
+              "text": "Que no puede regresar valores.",
+              "explanation_correct": "",
+              "explanation_wrong": "Un método public puede ser void o return."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q9",
+          "text": "¿Cómo se invoca un método static desde otra clase?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Creando siempre un objeto con new.",
+              "explanation_correct": "",
+              "explanation_wrong": "Para static no es necesario crear una instancia."
+            },
+            {
+              "option": "b",
+              "text": "Usando el nombre de la clase y el método: Clase.metodo();",
+              "explanation_correct": "Correcto, esa es la forma común de invocar métodos static.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Usando únicamente return.",
+              "explanation_correct": "",
+              "explanation_wrong": "return no sirve para invocar métodos."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q10",
+          "text": "¿Qué se necesita para invocar un método NO static desde otra clase?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Crear una instancia de la clase y usar el objeto.",
+              "explanation_correct": "Correcto, primero se crea el objeto y luego se invoca el método.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Invocarlo directamente con Clase.metodo();",
+              "explanation_correct": "",
+              "explanation_wrong": "Esa forma aplica para métodos static."
+            },
+            {
+              "option": "c",
+              "text": "Declararlo siempre como private.",
+              "explanation_correct": "",
+              "explanation_wrong": "private limitaría el acceso desde otra clase."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
