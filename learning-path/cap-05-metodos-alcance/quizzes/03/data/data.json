@@ -1,0 +1,19 @@
+{
+  "title": "Quiz 03 — Capítulo 5 — Ejercicios de código Métodos y alcance",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Mini Proyecto - Métodos y alcance",
+      "instructions": "Desarrolla el siguiente mini proyecto usando métodos, parámetros, return, modificadores de acceso, métodos static e instancia de clase.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Proyecto Final: Utilidades básicas para pruebas</strong><br><br>Vas a crear un pequeño sistema en consola para practicar <strong>métodos y alcance</strong>.<br><br><strong>Reglas:</strong><br><ul><li>Crea una clase principal llamada <strong>Main</strong></li><li>Crea una clase adicional llamada <strong>TestUtils</strong></li><li>Desde <strong>Main</strong> deberás invocar métodos de <strong>TestUtils</strong></li></ul><br><br><strong>Métodos requeridos en TestUtils:</strong><br><ul><li><strong>public static void mostrarInicio()</strong> → imprime \"Iniciando pruebas...\"</li><li><strong>public static String obtenerAmbiente()</strong> → regresa \"QA\"</li><li><strong>public int sumarCasos(int pasados, int fallidos)</strong> → regresa la suma de ambos valores</li><li><strong>private void validarDatosInternos()</strong> → imprime \"Validando datos internos...\"</li><li><strong>public void ejecutarValidacion()</strong> → invoca internamente a validarDatosInternos()</li></ul><br><br><strong>Desde Main:</strong><br><ul><li>Invoca <strong>mostrarInicio()</strong> usando la sintaxis de método static</li><li>Obtén el ambiente usando <strong>obtenerAmbiente()</strong> y guárdalo en una variable</li><li>Crea una instancia de <strong>TestUtils</strong></li><li>Invoca <strong>sumarCasos(8, 2)</strong> usando el objeto</li><li>Invoca <strong>ejecutarValidacion()</strong> usando el objeto</li></ul><br><br><strong>Salida esperada aproximada:</strong><br><pre>Iniciando pruebas...\nAmbiente: QA\nTotal casos: 10\nValidando datos internos...</pre><br><br><strong>Ejemplo mínimo para iniciar:</strong><br><pre>public class Main {\n  public static void main(String[] args) {\n    // Aquí invoca tus métodos\n  }\n}</pre><br><br><em>Importante:</em><br><ul><li>Los métodos <strong>static</strong> se invocan con <strong>Clase.metodo()</strong></li><li>Los métodos <strong>no static</strong> se invocan creando un objeto con <strong>new</strong></li><li>Un método <strong>private</strong> solo puede usarse dentro de la misma clase</li><li>Un método con <strong>return</strong> debe regresar un valor compatible con su tipo</li></ul><br><br>Modifica los valores de casos pasados y fallidos para validar que el resultado cambia correctamente.",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}

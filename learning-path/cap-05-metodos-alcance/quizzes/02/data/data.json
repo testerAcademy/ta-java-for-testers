@@ -1,0 +1,73 @@
+{
+  "title": "Quiz 02 — Capítulo 5 — Ejercicios de código Métodos y alcance",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Ejercicios prácticos - Métodos y alcance",
+      "instructions": "Resuelve cada ejercicio escribiendo el código en tu IDE. Después de resolverlo, modifica valores y vuelve a ejecutar para analizar el comportamiento.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Ejercicio 1 (Método VOID)</strong><br><br>Crea un método <strong>saludar()</strong> de tipo <strong>void</strong>.<br><br>Dentro del método imprime el mensaje <strong>Hola Java For Testers</strong>.<br><br>Invoca el método desde main.<br><br><em>Cambia el mensaje y vuelve a ejecutar.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q2",
+          "text": "<strong>Ejercicio 2 (Método VOID con parámetros)</strong><br><br>Crea un método <strong>saludar(String nombre)</strong>.<br><br>Debe imprimir <strong>Hola &lt;nombre&gt;</strong>.<br><br>Invoca el método enviando tu nombre.<br><br><em>Prueba con otros nombres.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q3",
+          "text": "<strong>Ejercicio 3 (Método Return)</strong><br><br>Crea un método llamado <strong>obtenerNombre()</strong> que regrese un String.<br><br>Haz que el método regrese tu nombre.<br><br>Guarda el resultado en una variable e imprímelo.<br><br><em>Cambia el valor regresado.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q4",
+          "text": "<strong>Ejercicio 4 (Método Return con parámetros)</strong><br><br>Crea un método <strong>sumar(int num1, int num2)</strong>.<br><br>Debe regresar la suma de ambos números.<br><br>Invoca el método usando 5 y 7.<br><br><em>Prueba con otros valores.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q5",
+          "text": "<strong>Ejercicio 5 (Método PRIVATE)</strong><br><br>Crea un método llamado <strong>validarPassword()</strong> con modificador <strong>private</strong>.<br><br>Dentro imprime un mensaje indicando que se está validando la contraseña.<br><br>Invócalo desde otro método de la misma clase.<br><br><em>Analiza por qué funciona.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q6",
+          "text": "<strong>Ejercicio 6 (Método PUBLIC)</strong><br><br>Crea un método <strong>login()</strong> con modificador <strong>public</strong>.<br><br>Debe imprimir <strong>Login exitoso</strong>.<br><br>Invócalo desde main.<br><br><em>Cambia el mensaje mostrado.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q7",
+          "text": "<strong>Ejercicio 7 (Método PROTECTED)</strong><br><br>Crea un método llamado <strong>abrirNavegador()</strong> con modificador <strong>protected</strong>.<br><br>Debe imprimir un mensaje indicando que el navegador fue abierto.<br><br>Invócalo desde la misma clase.<br><br><em>Analiza cuándo protected puede ser útil.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q8",
+          "text": "<strong>Ejercicio 8 (Invocar método STATIC)</strong><br><br>Crea una clase llamada <strong>Utilidades</strong>.<br><br>Agrega un método <strong>public static void saludar()</strong>.<br><br>Desde otra clase invócalo usando la sintaxis <strong>Clase.metodo()</strong>.<br><br><em>Cambia el mensaje del método.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q9",
+          "text": "<strong>Ejercicio 9 (Invocar método NO STATIC)</strong><br><br>Crea una clase llamada <strong>Utilidades</strong>.<br><br>Agrega un método <strong>public void saludar()</strong>.<br><br>Desde otra clase crea un objeto usando <strong>new</strong> e invoca el método.<br><br><em>Cambia el nombre de la variable objeto.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q10",
+          "text": "<strong>Ejercicio 10 (Combinando conceptos)</strong><br><br>Crea una clase Utilidades con un método <strong>public static int sumar(int a, int b)</strong>.<br><br>Desde otra clase invoca el método y guarda el resultado en una variable.<br><br>Imprime el resultado en consola.<br><br><em>Prueba diferentes números y analiza el comportamiento.</em>",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}
