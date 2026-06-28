@@ -119,11 +119,16 @@
         { "label": "Continue", "url": "https://youtu.be/kLNi8YdROhg" },
         { "label": "Actividades Break & Continue", "url": "https://youtu.be/H2DyG9KVFj8" },
         { "label": "Quizzes y Actividades", "url": "https://youtu.be/tgw4A364JLQ" }
-]
+      ]
     },
     {
       "title": "Capítulo 5 — Métodos y alcance",
-      "pdf": "resources/html/under_construction.html"
+      "pdf": "learning-path/cap-05-metodos-alcance/capitulo-05.pdf",
+      "quizzes": [
+        "learning-path/cap-05-metodos-alcance/quizzes/01/quiz.html",
+        "learning-path/cap-05-metodos-alcance/quizzes/02/quiz.html",
+        "learning-path/cap-05-metodos-alcance/quizzes/03/quiz.html"
+      ]
     },
     {
       "title": "Capítulo 6 — Manejo de excepciones",
