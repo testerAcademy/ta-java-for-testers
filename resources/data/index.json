@@ -128,6 +128,19 @@
         "learning-path/cap-05-metodos-alcance/quizzes/01/quiz.html",
         "learning-path/cap-05-metodos-alcance/quizzes/02/quiz.html",
         "learning-path/cap-05-metodos-alcance/quizzes/03/quiz.html"
+      ],
+      "videos": [
+        { "label": "Capítulo 5", "url": "https://youtu.be/h2khh6CYm9s" },
+        { "label": "¿Qué son los Métodos?", "url": "https://youtu.be/iPa7nX1_LhI" },
+        { "label": "Métodos - Void", "url": "https://youtu.be/yiBrhxABjcg" },
+        { "label": "Métodos - Return", "url": "https://youtu.be/xtE_b2Td_HI" },
+        { "label": "Modificadores", "url": "https://youtu.be/T3J0uLQ0wo0" },
+        { "label": "Private", "url": "https://youtu.be/OW3EvP92Fl4" },
+        { "label": "Public", "url": "https://youtu.be/8K8xaZIvD0w" },
+        { "label": "Protected", "url": "https://youtu.be/PsxHsT5-dcA" },
+        { "label": "Métodos - Static", "url": "https://youtu.be/Evb9c0qd5_o" },
+        { "label": "Instancia de Clases", "url": "https://youtu.be/QYDPdvkDY90" },
+        { "label": "Quizzes y Actividades", "url": "resources/html/under_construction.html" }
       ]
     },
     {
