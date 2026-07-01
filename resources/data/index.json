@@ -145,7 +145,15 @@
     },
     {
       "title": "Capítulo 6 — Manejo de excepciones",
-      "pdf": "resources/html/under_construction.html"
+      "pdf": "learning-path/cap-05-metodos-alcance/capitulo-06.pdf",
+      "quizzes": [
+        "learning-path/cap-06-excepciones/quizzes/01/quiz.html",
+        "learning-path/cap-06-excepciones/quizzes/02/quiz.html",
+        "learning-path/cap-06-excepciones/quizzes/03/quiz.html"
+      ],
+      "videos": [
+        { "label": "Capítulo 6", "url": "resources/html/under_construction.html" }
+      ]
     },
     {
       "title": "Capítulo 7 — Patrones de diseño y arquitectura",

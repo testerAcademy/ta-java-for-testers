@@ -1,0 +1,19 @@
+{
+  "title": "Quiz 03 — Capítulo 6 — Ejercicios de código Try Catch Throw Throws",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Mini Proyecto - Manejo de errores",
+      "instructions": "Desarrolla el siguiente mini proyecto usando try, catch, throw y throws.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Proyecto Final: Mejorar el mini proyecto del Capítulo 5</strong><br><br>Vas a regresar al <strong>Quiz 03 del Capítulo 5</strong> y usarás el mini proyecto de <strong>Métodos y alcance</strong> como base.<br><br><a href=\"https://testeracademy.github.io/ta-java-for-testers/learning-path/cap-05-metodos-alcance/quizzes/03/quiz.html\" target=\"_blank\">👉 Abrir Quiz 03 - Capítulo 5</a><br><br>Ahora debes mejorar ese proyecto agregando manejo de errores con <strong>try</strong>, <strong>catch</strong>, <strong>throw</strong> y <strong>throws</strong>.<br><br><strong>Reglas:</strong><br><ul><li>Conserva la clase principal llamada <strong>Main</strong>.</li><li>Conserva la clase adicional llamada <strong>TestUtils</strong>.</li><li>Conserva los métodos creados en el proyecto anterior.</li><li>Agrega bloques <strong>try/catch</strong> para controlar errores.</li><li>Agrega al menos un <strong>throw</strong> dentro de un método de <strong>TestUtils</strong>.</li><li>Agrega al menos un método que utilice <strong>throws</strong>.</li><li>Evita que el programa termine inesperadamente cuando ocurra un error.</li></ul><br><br><strong>Mejoras sugeridas:</strong><br><ul><li>En <strong>sumarCasos(int pasados, int fallidos)</strong>, valida que ambos valores sean mayores o iguales a cero.</li><li>Si alguno es negativo, lanza una excepción usando <strong>throw new IllegalArgumentException()</strong>.</li><li>Desde <strong>Main</strong>, invoca <strong>sumarCasos()</strong> dentro de un bloque <strong>try/catch</strong>.</li><li>Crea un método <strong>simularEspera()</strong> que utilice <strong>Thread.sleep(3000)</strong> y declare <strong>throws InterruptedException</strong>.</li><li>Invoca <strong>simularEspera()</strong> desde <strong>Main</strong> controlando la excepción.</li></ul><br><br><strong>Salida esperada aproximada:</strong><br><pre>Iniciando pruebas...\nAmbiente: QA\nTotal casos: 10\nValidando datos internos...\nSimulando espera...\nProceso finalizado.</pre><br><br><strong>Escenario con error:</strong><br><pre>Iniciando pruebas...\nAmbiente: QA\nError controlado: Los casos no pueden ser negativos.\nProceso finalizado.</pre><br><br><strong>Ejemplo mínimo para iniciar:</strong><br><pre>public class Main {\n    public static void main(String[] args) {\n        // Aquí comienza tu solución\n    }\n}</pre><br><br><em>Importante:</em><br><ul><li><strong>try</strong> contiene el código que puede producir una excepción.</li><li><strong>catch</strong> captura y maneja la excepción.</li><li><strong>throw</strong> lanza una excepción manualmente.</li><li><strong>throws</strong> indica que un método puede lanzar una excepción.</li></ul><br><br>Prueba primero un escenario exitoso y después uno que provoque una excepción para validar ambos comportamientos.",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}

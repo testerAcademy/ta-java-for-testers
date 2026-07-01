@@ -1,0 +1,273 @@
+{
+  "title": "Quiz 01 — Capítulo 6: Manejo de excepciones y errores",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple",
+      "instructions": "Selecciona la respuesta correcta en cada pregunta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Cuál es el propósito principal de un bloque try/catch?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Repetir código automáticamente.",
+              "explanation_correct": "",
+              "explanation_wrong": "Los ciclos son los que repiten código."
+            },
+            {
+              "option": "b",
+              "text": "Controlar errores para evitar que la aplicación termine inesperadamente.",
+              "explanation_correct": "Correcto, try/catch permite manejar errores de forma controlada.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Crear nuevas clases en Java.",
+              "explanation_correct": "",
+              "explanation_wrong": "try/catch no crea clases."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "¿Qué bloque contiene el código que puede generar un error?",
+          "options": [
+            {
+              "option": "a",
+              "text": "catch",
+              "explanation_correct": "",
+              "explanation_wrong": "catch captura el error, no contiene el código principal."
+            },
+            {
+              "option": "b",
+              "text": "throw",
+              "explanation_correct": "",
+              "explanation_wrong": "throw lanza una excepción manualmente."
+            },
+            {
+              "option": "c",
+              "text": "try",
+              "explanation_correct": "Correcto, el bloque try contiene el código que puede fallar.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q3",
+          "text": "¿Cuál es la función del bloque catch?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Capturar y manejar una excepción.",
+              "explanation_correct": "Correcto, catch se ejecuta cuando ocurre una excepción en el try.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Repetir el código del try.",
+              "explanation_correct": "",
+              "explanation_wrong": "catch no repite código."
+            },
+            {
+              "option": "c",
+              "text": "Cerrar automáticamente la aplicación.",
+              "explanation_correct": "",
+              "explanation_wrong": "El objetivo es evitar que la aplicación termine inesperadamente."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q4",
+          "text": "¿Para qué se utiliza la palabra reservada throw?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Para capturar una excepción.",
+              "explanation_correct": "",
+              "explanation_wrong": "Capturar excepciones corresponde a catch."
+            },
+            {
+              "option": "b",
+              "text": "Para lanzar una excepción manualmente.",
+              "explanation_correct": "Correcto, throw crea o lanza una excepción.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Para finalizar cualquier método.",
+              "explanation_correct": "",
+              "explanation_wrong": "Para finalizar un método normalmente se usa return."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q5",
+          "text": "¿Qué hace la palabra reservada throws?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Indica que un método puede lanzar una excepción.",
+              "explanation_correct": "Correcto, delega el manejo del error a quien invoque el método.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Captura automáticamente cualquier excepción.",
+              "explanation_correct": "",
+              "explanation_wrong": "throws no captura excepciones."
+            },
+            {
+              "option": "c",
+              "text": "Evita que existan errores en el programa.",
+              "explanation_correct": "",
+              "explanation_wrong": "throws no elimina los errores."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q6",
+          "text": "¿Cuál es la diferencia principal entre throw y throws?",
+          "options": [
+            {
+              "option": "a",
+              "text": "throw lanza una excepción; throws indica que un método puede lanzarla.",
+              "explanation_correct": "Correcto, esa es la diferencia fundamental.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Ambos hacen exactamente lo mismo.",
+              "explanation_correct": "",
+              "explanation_wrong": "Son conceptos diferentes."
+            },
+            {
+              "option": "c",
+              "text": "throw captura errores y throws imprime errores.",
+              "explanation_correct": "",
+              "explanation_wrong": "Ninguno captura ni imprime errores automáticamente."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q7",
+          "text": "¿Qué es un Stacktrace?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Una lista de variables utilizadas por el programa.",
+              "explanation_correct": "",
+              "explanation_wrong": "El Stacktrace no muestra variables."
+            },
+            {
+              "option": "b",
+              "text": "El mensaje que Java muestra cuando ocurre una excepción.",
+              "explanation_correct": "Correcto, ayuda a identificar el origen del problema.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Una lista de métodos disponibles en una clase.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso corresponde a la definición de una clase."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q8",
+          "text": "¿Qué información importante muestra un Stacktrace?",
+          "options": [
+            {
+              "option": "a",
+              "text": "La clase y la línea donde ocurrió el error.",
+              "explanation_correct": "Correcto, esa información ayuda a localizar rápidamente el problema.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Los comentarios del programador.",
+              "explanation_correct": "",
+              "explanation_wrong": "Los comentarios no aparecen en un Stacktrace."
+            },
+            {
+              "option": "c",
+              "text": "El historial de cambios del proyecto.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso pertenece al control de versiones."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q9",
+          "text": "Cuando ocurre una excepción y existe un bloque catch adecuado, ¿qué sucede normalmente?",
+          "options": [
+            {
+              "option": "a",
+              "text": "La aplicación puede continuar de forma controlada.",
+              "explanation_correct": "Correcto, ese es uno de los objetivos principales de try/catch.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Java elimina automáticamente el error del código.",
+              "explanation_correct": "",
+              "explanation_wrong": "El error debe corregirse por el desarrollador."
+            },
+            {
+              "option": "c",
+              "text": "El programa siempre termina inmediatamente.",
+              "explanation_correct": "",
+              "explanation_wrong": "Eso normalmente ocurre cuando la excepción no es manejada."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q10",
+          "text": "Al analizar un Stacktrace, ¿qué es recomendable revisar primero?",
+          "options": [
+            {
+              "option": "a",
+              "text": "La clase y el número de línea donde ocurrió la excepción.",
+              "explanation_correct": "Correcto, esa información suele indicar el origen del problema.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "El nombre del proyecto.",
+              "explanation_correct": "",
+              "explanation_wrong": "No ayuda a encontrar el error."
+            },
+            {
+              "option": "c",
+              "text": "Los comentarios del código fuente.",
+              "explanation_correct": "",
+              "explanation_wrong": "Los comentarios no forman parte del Stacktrace."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}

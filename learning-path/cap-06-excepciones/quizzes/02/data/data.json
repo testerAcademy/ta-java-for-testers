@@ -1,0 +1,73 @@
+{
+  "title": "Quiz 02 — Capítulo 6 — Ejercicios de código Try / Catch",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Ejercicios prácticos - Try / Catch",
+      "instructions": "Resuelve cada ejercicio escribiendo el código en tu IDE. Después de resolverlo, modifica los valores y vuelve a ejecutar para analizar cómo cambia el comportamiento del programa.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Ejercicio 1 (Try / Catch básico)</strong><br><br>Crea un programa que intente dividir <strong>10 entre 0</strong> dentro de un bloque <strong>try</strong>.<br><br>Captura el error usando <strong>catch</strong> e imprime el mensaje <strong>\"Ocurrió un error.\"</strong><br><br><em>Cambia el divisor por un número distinto de cero y observa qué sucede.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q2",
+          "text": "<strong>Ejercicio 2 (División válida)</strong><br><br>Realiza una división dentro de un bloque <strong>try</strong> utilizando valores que no produzcan error.<br><br>Imprime el resultado obtenido.<br><br><em>Después cambia el divisor a cero para provocar la excepción.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q3",
+          "text": "<strong>Ejercicio 3 (Mensaje personalizado)</strong><br><br>Crea un bloque <strong>try/catch</strong> que provoque un error de división entre cero.<br><br>Dentro del <strong>catch</strong> imprime un mensaje personalizado indicando que ocurrió un problema durante la operación.<br><br><em>Prueba distintos mensajes.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q4",
+          "text": "<strong>Ejercicio 4 (Continuar la ejecución)</strong><br><br>Imprime el mensaje <strong>\"Inicio\"</strong> antes del bloque <strong>try</strong>.<br><br>Provoca una excepción y captúrala con <strong>catch</strong>.<br><br>Después del bloque imprime <strong>\"Fin\"</strong>.<br><br><em>Analiza cómo el programa continúa ejecutándose.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q5",
+          "text": "<strong>Ejercicio 5 (Acceso a un arreglo)</strong><br><br>Crea un arreglo con tres elementos.<br><br>Dentro del <strong>try</strong> intenta acceder a una posición que no exista.<br><br>Captura la excepción utilizando <strong>catch</strong>.<br><br><em>Después accede a una posición válida.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q6",
+          "text": "<strong>Ejercicio 6 (Conversión de texto a número)</strong><br><br>Utiliza <strong>Integer.parseInt()</strong> para convertir un texto a entero dentro de un <strong>try</strong>.<br><br>Utiliza un texto que provoque una excepción y captúrala con <strong>catch</strong>.<br><br><em>Después prueba utilizando un número válido.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q7",
+          "text": "<strong>Ejercicio 7 (Capturar Exception)</strong><br><br>Crea un bloque <strong>try/catch</strong> utilizando <strong>Exception e</strong>.<br><br>Provoca una excepción y muestra un mensaje indicando que el error fue controlado.<br><br><em>Prueba diferentes errores para comprobar que el catch sigue funcionando.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q8",
+          "text": "<strong>Ejercicio 8 (Varios cálculos)</strong><br><br>Dentro de un mismo bloque <strong>try</strong> realiza dos operaciones matemáticas.<br><br>Haz que una de ellas provoque una excepción.<br><br>Captura el error utilizando <strong>catch</strong>.<br><br><em>Analiza qué instrucciones dejan de ejecutarse cuando ocurre la excepción.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q9",
+          "text": "<strong>Ejercicio 9 (Leyendo el mensaje de la excepción)</strong><br><br>Provoca una excepción dentro de un bloque <strong>try</strong>.<br><br>Dentro del <strong>catch</strong> imprime el mensaje que contiene la excepción utilizando el objeto <strong>e</strong>.<br><br><em>Observa la información que proporciona Java.</em>",
+          "image": "",
+          "options": []
+        },
+        {
+          "id": "q10",
+          "text": "<strong>Ejercicio 10 (Mini reto)</strong><br><br>Crea un programa que primero imprima <strong>\"Iniciando proceso...\"</strong>.<br><br>Después intenta realizar una operación que provoque una excepción utilizando <strong>try/catch</strong>.<br><br>Si ocurre el error, muestra un mensaje personalizado y finalmente imprime <strong>\"Proceso finalizado.\"</strong><br><br><em>Modifica el código para probar tanto un escenario exitoso como uno con excepción.</em>",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}
