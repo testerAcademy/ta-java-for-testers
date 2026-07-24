@@ -1,0 +1,273 @@
+{
+  "title": "Quiz 01 — Capítulo 7: Arquitectura, DTO, DAO y Utils",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Sección 1 — Opción múltiple",
+      "instructions": "Selecciona la respuesta correcta en cada pregunta.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "¿Cuál es la función principal de un DTO?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Transportar información entre clases.",
+              "explanation_correct": "Correcto, un DTO se utiliza para guardar y transportar datos entre diferentes clases.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Acceder directamente a la persistencia.",
+              "explanation_correct": "",
+              "explanation_wrong": "Acceder a la persistencia es responsabilidad del DAO."
+            },
+            {
+              "option": "c",
+              "text": "Controlar la interfaz de usuario.",
+              "explanation_correct": "",
+              "explanation_wrong": "El DTO no controla la interfaz de usuario."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q2",
+          "text": "¿Qué tipo de contenido debe tener principalmente un DTO?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Consultas para guardar información.",
+              "explanation_correct": "",
+              "explanation_wrong": "Las operaciones para guardar o consultar información corresponden al DAO."
+            },
+            {
+              "option": "b",
+              "text": "Datos que serán transportados entre clases.",
+              "explanation_correct": "Correcto, un DTO contiene datos y facilita su intercambio entre clases.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Funciones generales para cualquier proyecto.",
+              "explanation_correct": "",
+              "explanation_wrong": "Las funciones generales y reutilizables pertenecen normalmente a una clase Utils."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q3",
+          "text": "¿Qué debería evitarse dentro de un DTO?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Atributos privados.",
+              "explanation_correct": "",
+              "explanation_wrong": "Los atributos privados son comunes dentro de un DTO."
+            },
+            {
+              "option": "b",
+              "text": "Métodos getter y setter.",
+              "explanation_correct": "",
+              "explanation_wrong": "Los getter y setter permiten acceder y modificar los datos del DTO."
+            },
+            {
+              "option": "c",
+              "text": "Lógica de negocio.",
+              "explanation_correct": "Correcto, un DTO debe guardar y transportar datos, no realizar operaciones de negocio.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q4",
+          "text": "¿Cuál es la responsabilidad principal de un DAO?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Acceder a la persistencia para guardar o consultar información.",
+              "explanation_correct": "Correcto, el DAO se encarga de realizar operaciones relacionadas con la persistencia.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Mostrar formularios al usuario.",
+              "explanation_correct": "",
+              "explanation_wrong": "Los formularios pertenecen a la interfaz de usuario."
+            },
+            {
+              "option": "c",
+              "text": "Transportar información sin realizar operaciones.",
+              "explanation_correct": "",
+              "explanation_wrong": "Esa es la función principal de un DTO."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q5",
+          "text": "¿Qué objeto puede recibir un DAO para guardar información?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Una clase Utils.",
+              "explanation_correct": "",
+              "explanation_wrong": "Una clase Utils contiene funciones generales y reutilizables."
+            },
+            {
+              "option": "b",
+              "text": "Un DTO.",
+              "explanation_correct": "Correcto, el DAO puede recibir un DTO con los datos que necesita guardar o consultar.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "La interfaz completa de usuario.",
+              "explanation_correct": "",
+              "explanation_wrong": "El DAO no debe depender directamente de la interfaz de usuario."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q6",
+          "text": "¿Cuál de las siguientes opciones puede ser parte de la persistencia?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Únicamente una pantalla web.",
+              "explanation_correct": "",
+              "explanation_wrong": "Una pantalla web forma parte de la interfaz, no de la persistencia."
+            },
+            {
+              "option": "b",
+              "text": "Solo variables locales de un método.",
+              "explanation_correct": "",
+              "explanation_wrong": "Las variables locales no representan una capa de persistencia."
+            },
+            {
+              "option": "c",
+              "text": "Una base de datos, un archivo o una API.",
+              "explanation_correct": "Correcto, la persistencia puede estar representada por bases de datos, archivos, APIs o memoria.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q7",
+          "text": "¿Cuál es la función principal del Controller en la arquitectura mostrada?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Guardar directamente todos los datos.",
+              "explanation_correct": "",
+              "explanation_wrong": "Guardar datos es responsabilidad del DAO y la persistencia."
+            },
+            {
+              "option": "b",
+              "text": "Coordinar el flujo de la aplicación.",
+              "explanation_correct": "Correcto, el Controller recibe datos, coordina las clases necesarias y devuelve una respuesta.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Contener únicamente atributos y getters.",
+              "explanation_correct": "",
+              "explanation_wrong": "Esa estructura corresponde normalmente a un DTO."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        },
+        {
+          "id": "q8",
+          "text": "¿Qué caracteriza a una clase Utils?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Contiene funciones generales y reutilizables.",
+              "explanation_correct": "Correcto, una clase Utils agrupa operaciones generales que pueden reutilizarse.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "b",
+              "text": "Solo transporta datos entre clases.",
+              "explanation_correct": "",
+              "explanation_wrong": "Transportar datos es responsabilidad de un DTO."
+            },
+            {
+              "option": "c",
+              "text": "Siempre guarda información en una base de datos.",
+              "explanation_correct": "",
+              "explanation_wrong": "Guardar información corresponde normalmente al DAO."
+            }
+          ],
+          "answer": "a",
+          "image": ""
+        },
+        {
+          "id": "q9",
+          "text": "¿Cuál de las siguientes clases es un buen ejemplo de una clase Utils?",
+          "options": [
+            {
+              "option": "a",
+              "text": "AlumnoDAO.",
+              "explanation_correct": "",
+              "explanation_wrong": "AlumnoDAO sería una clase encargada de acceder a la persistencia."
+            },
+            {
+              "option": "b",
+              "text": "AlumnoDTO.",
+              "explanation_correct": "",
+              "explanation_wrong": "AlumnoDTO sería una clase destinada a guardar y transportar datos."
+            },
+            {
+              "option": "c",
+              "text": "StringUtils.",
+              "explanation_correct": "Correcto, StringUtils puede contener funciones generales para trabajar con textos.",
+              "explanation_wrong": ""
+            }
+          ],
+          "answer": "c",
+          "image": ""
+        },
+        {
+          "id": "q10",
+          "text": "¿Cuál es el flujo principal mostrado en la arquitectura del capítulo?",
+          "options": [
+            {
+              "option": "a",
+              "text": "Usuario → DAO → Controller → UI → DTO.",
+              "explanation_correct": "",
+              "explanation_wrong": "El usuario interactúa primero con la interfaz y no directamente con el DAO."
+            },
+            {
+              "option": "b",
+              "text": "Usuario → UI → Controller → DTO → DAO → Persistencia.",
+              "explanation_correct": "Correcto, la UI recibe la interacción, el Controller coordina el flujo, el DTO transporta datos y el DAO accede a la persistencia.",
+              "explanation_wrong": ""
+            },
+            {
+              "option": "c",
+              "text": "Persistencia → Usuario → Utils → DTO → UI.",
+              "explanation_correct": "",
+              "explanation_wrong": "Ese orden no representa el flujo presentado en el capítulo."
+            }
+          ],
+          "answer": "b",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}

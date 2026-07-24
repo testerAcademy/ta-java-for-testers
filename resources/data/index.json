@@ -152,12 +152,27 @@
         "learning-path/cap-06-excepciones/quizzes/03/quiz.html"
       ],
       "videos": [
-        { "label": "Capítulo 6", "url": "resources/html/under_construction.html" }
+        { "label": "Capítulo 6", "url": "https://youtu.be/RnJ2sfEQwf4" },
+        { "label": "Try Catch", "url": "https://youtu.be/EYd1lbmnFrI" },
+        { "label": "Throw y Throws", "url": "https://youtu.be/u1m6-gsPVTQ" },
+        { "label": "Stacktrace", "url": "https://youtu.be/64X5Gh5gg9s" },
+        { "label": "Quizzes y actividades", "url": "https://youtu.be/aw-P_HEWJSA" }
       ]
     },
     {
       "title": "Capítulo 7 — Patrones de diseño y arquitectura",
-      "pdf": "resources/html/under_construction.html"
+      "pdf": "learning-path/cap-07-patrones-arq/capitulo-07.pdf",
+      "quizzes": [
+        "learning-path/cap-07-patrones-arq/quizzes/01/quiz.html",
+        "learning-path/cap-07-patrones-arq/quizzes/02/quiz.html",
+      ],
+      "videos": [
+        { "label": "Capítulo 6", "url": "https://youtu.be/RnJ2sfEQwf4" },
+        { "label": "Try Catch", "url": "https://youtu.be/EYd1lbmnFrI" },
+        { "label": "Throw y Throws", "url": "https://youtu.be/u1m6-gsPVTQ" },
+        { "label": "Stacktrace", "url": "https://youtu.be/64X5Gh5gg9s" },
+        { "label": "Quizzes y actividades", "url": "https://youtu.be/aw-P_HEWJSA" }
+      ]
     },
     {
       "title": "Capítulo 8 — Siguientes pasos",

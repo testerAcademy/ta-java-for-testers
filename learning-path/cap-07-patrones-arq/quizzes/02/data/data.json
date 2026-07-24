@@ -1,0 +1,19 @@
+{
+  "title": "Quiz 02 — Capítulo 7 — Mini Proyecto Arquitectura DTO DAO y Utils",
+  "sections": [
+    {
+      "id": "s1",
+      "type": "options",
+      "title": "Mini Proyecto - Registro de mascotas y visitas veterinarias",
+      "instructions": "Desarrolla el siguiente mini proyecto aplicando una arquitectura sencilla con Controller, DTO, DAO, Utils y persistencia en memoria.",
+      "questions": [
+        {
+          "id": "q1",
+          "text": "<strong>Proyecto Final: Sistema de mascotas y visitas veterinarias</strong><br><br>Vas a crear un pequeño sistema en consola para registrar mascotas y sus visitas al veterinario.<br><br>El objetivo es separar las responsabilidades del proyecto utilizando <strong>DTO</strong>, <strong>DAO</strong>, <strong>Controller</strong> y <strong>Utils</strong>.<br><br><strong>Clases requeridas:</strong><br><ul><li><strong>Main</strong> → inicia el programa y prueba las funciones.</li><li><strong>MascotaDTO</strong> → transporta los datos de una mascota.</li><li><strong>VisitaDTO</strong> → transporta los datos de una visita veterinaria.</li><li><strong>MascotaDAO</strong> → guarda y consulta mascotas en memoria.</li><li><strong>VisitaDAO</strong> → guarda y consulta visitas en memoria.</li><li><strong>MascotaController</strong> → coordina el registro de mascotas y visitas.</li><li><strong>StringUtils</strong> → contiene una función reutilizable para convertir texto a mayúsculas.</li></ul><br><br><strong>Atributos de MascotaDTO:</strong><br><ul><li><strong>int id</strong></li><li><strong>String nombre</strong></li><li><strong>String especie</strong></li></ul><br><br><strong>Atributos de VisitaDTO:</strong><br><ul><li><strong>int mascotaId</strong></li><li><strong>String motivo</strong></li></ul><br><br><strong>Funciones mínimas:</strong><br><ul><li>Registrar una mascota.</li><li>Consultar todas las mascotas registradas.</li><li>Registrar una visita veterinaria para una mascota.</li><li>Consultar las visitas registradas.</li><li>Convertir el nombre de la mascota a mayúsculas usando <strong>StringUtils</strong>.</li></ul><br><br><strong>Reglas de arquitectura:</strong><br><ul><li>Los DTO solo deben guardar y transportar datos.</li><li>Los DAO deben guardar la información usando una <strong>ArrayList</strong>.</li><li>El Controller debe crear los DTO y enviarlos al DAO.</li><li>Main debe comunicarse con el Controller.</li><li>StringUtils debe contener métodos generales y reutilizables.</li><li>No necesitas una base de datos real.</li></ul><br><br><strong>Flujo esperado:</strong><br><pre>Main\n  ↓\nMascotaController\n  ↓\nMascotaDTO / VisitaDTO\n  ↓\nMascotaDAO / VisitaDAO\n  ↓\nArrayList</pre><br><br><strong>Ejemplo de ejecución:</strong><br><pre>Mascota registrada: LUNA\nId: 1\nEspecie: Perro\n\nVisita registrada\nMascota Id: 1\nMotivo: Vacunación</pre><br><br><strong>Ejemplo mínimo para iniciar:</strong><br><pre>public class Main {\n    public static void main(String[] args) {\n\n        MascotaController controller = new MascotaController();\n\n        controller.registrarMascota(1, \"Luna\", \"Perro\");\n        controller.registrarVisita(1, \"Vacunación\");\n\n        controller.mostrarMascotas();\n        controller.mostrarVisitas();\n    }\n}</pre><br><br><em>Importante:</em><br><ul><li>No coloques lógica de negocio dentro de los DTO.</li><li>No permitas que Main guarde directamente información en los DAO.</li><li>Usa getters y setters en los DTO.</li><li>Prueba registrando al menos dos mascotas y dos visitas veterinarias.</li></ul><br><br>Cuando termines, agrega una nueva función para consultar las visitas de una mascota usando su id.",
+          "image": "",
+          "options": []
+        }
+      ]
+    }
+  ]
+}
