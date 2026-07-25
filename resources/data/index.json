@@ -167,11 +167,14 @@
         "learning-path/cap-07-patrones-arq/quizzes/02/quiz.html"
       ],
       "videos": [
-        { "label": "Capítulo 6", "url": "https://youtu.be/RnJ2sfEQwf4" },
-        { "label": "Try Catch", "url": "https://youtu.be/EYd1lbmnFrI" },
-        { "label": "Throw y Throws", "url": "https://youtu.be/u1m6-gsPVTQ" },
-        { "label": "Stacktrace", "url": "https://youtu.be/64X5Gh5gg9s" },
-        { "label": "Quizzes y actividades", "url": "https://youtu.be/aw-P_HEWJSA" }
+        { "label": "Capítulo 6", "url": "TEST" },
+        { "label": "test", "url": "TEST" },
+        { "label": "test", "url": "TEST" },
+        { "label": "test", "url": "TEST" },
+        { "label": "test", "url": "TEST" },
+        { "label": "test", "url": "TEST" },
+        { "label": "test", "url": "TEST" },
+        { "label": "test", "url": "TEST" }
       ]
     },
     {
