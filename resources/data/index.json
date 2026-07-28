@@ -167,14 +167,14 @@
         "learning-path/cap-07-patrones-arq/quizzes/02/quiz.html"
       ],
       "videos": [
-        { "label": "Capítulo 6", "url": "TEST" },
-        { "label": "test", "url": "TEST" },
-        { "label": "test", "url": "TEST" },
-        { "label": "test", "url": "TEST" },
-        { "label": "test", "url": "TEST" },
-        { "label": "test", "url": "TEST" },
-        { "label": "test", "url": "TEST" },
-        { "label": "test", "url": "TEST" }
+        { "label": "Capítulo 7", "url": "https://youtu.be/6G4Fqtxej4E" },
+        { "label": "Arquitectura de una aplicación", "url": "https://youtu.be/mrhfuUdI-34" },
+        { "label": "DTO (Data Transfer Object)", "url": "https://youtu.be/1EacVp4dHAY" },
+        { "label": "DTO y Herencia", "url": "https://youtu.be/OT-LcR6yCqw" },
+        { "label": "DAO (Data Access Object)", "url": "https://youtu.be/tresRNMAMUM" },
+        { "label": "Utils", "url": "https://youtu.be/DiGcElgQmy4" },
+        { "label": "Integrar DTO, DAO, Utils", "url": "https://youtu.be/oHmC4zDY8BQ" },
+        { "label": "Quizzes y Actividades", "url": "https://youtu.be/WxIqXGM92iU" }
       ]
     },
     {
