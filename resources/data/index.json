@@ -179,11 +179,14 @@
     },
     {
       "title": "Capítulo 8 — Siguientes pasos",
-      "pdf": "resources/html/under_construction.html"
-    },
-    {
-      "title": "Capítulo 9 — Créditos",
-      "pdf": "resources/html/under_construction.html"
+      "pdf": "learning-path/cap-08-siguientes/capitulo-08.pdf",
+      "videos": [
+        { "label": "Capítulo 8", "url": "https://youtu.be/pmwJXaKFd9s" },
+        { "label": "Siguientes Pasos", "url": "https://youtu.be/ab3qCXD1LP4" },
+        { "label": "Basicos de IA", "url": "https://youtu.be/nSMHrOO6x4Y" },
+        { "label": "IntelliJ Chat IA", "url": "https://youtu.be/YiHp51t4lws" },
+        { "label": "Hasta Pronto!!!", "url": "https://youtu.be/CL7nedMl5Hk" }
+      ]
     }
   ],
   "footer": {
